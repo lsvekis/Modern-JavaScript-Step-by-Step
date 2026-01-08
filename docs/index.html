@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>JavaScript 250 Exercises — Index</title>
+<style>
+  :root { --bg:#0b1020; --panel:#121a33; --text:#e8ecff; --muted:#a7b0d6; --accent:#7aa2ff; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); }
+  header { padding:18px; border-bottom:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(122,162,255,.14), transparent); }
+  .wrap { max-width:1100px; margin:0 auto; padding:18px; }
+  h1 { margin:0 0 6px; font-size:24px; }
+  p { color:var(--muted); margin:0; }
+  .grid { display:grid; grid-template-columns: 1fr; gap:14px; margin-top:14px; }
+  .card { background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:14px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+  h2 { margin:0 0 8px; font-size:18px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  ol.ex { columns: 2; column-gap: 22px; margin:0; padding-left:18px; }
+  @media (max-width: 860px) { ol.ex { columns:1; } }
+  .toplinks { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; align-items:center; }
+  .pill { display:inline-block; padding:8px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.18); }
+  input#q { background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.12); color:var(--text); border-radius:999px; padding:10px 12px; min-width:260px; }
+  .meta { font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>JavaScript by Building — 250 Exercises</h1>
+    <p>GitHub Pages-friendly. Click an exercise to run it. Each exercise shows visible UI changes (not only console logs).</p>
+    <div class="toplinks">
+      <a class="pill" href="readme.html">README</a>
+      <a class="pill" href="blueprint.html">Blueprint</a>
+      <input id="q" placeholder="Search exercises (e.g., fetch, array, modal)…" />
+      <span class="meta" id="count"></span>
+    </div>
+    <div class="meta" style="margin-top:10px;">Tip: Use DevTools → Console for deeper debugging.</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid" id="sections">
+    <section class="card">
+  <h2>Chapter 1 — JavaScript Basics & Setup</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 1 console output"><a href="chapter-01-javascript-basics-setup/ex-001-console-output.html">Exercise 001: Console Output</a></li>
+<li class="item" data-text="exercise 2 variables (let/const)"><a href="chapter-01-javascript-basics-setup/ex-002-variables-let-const.html">Exercise 002: Variables (let/const)</a></li>
+<li class="item" data-text="exercise 3 reassignment"><a href="chapter-01-javascript-basics-setup/ex-003-reassignment.html">Exercise 003: Reassignment</a></li>
+<li class="item" data-text="exercise 4 numbers & math"><a href="chapter-01-javascript-basics-setup/ex-004-numbers-math.html">Exercise 004: Numbers & Math</a></li>
+<li class="item" data-text="exercise 5 strings & concatenation"><a href="chapter-01-javascript-basics-setup/ex-005-strings-concatenation.html">Exercise 005: Strings & Concatenation</a></li>
+<li class="item" data-text="exercise 6 template literals"><a href="chapter-01-javascript-basics-setup/ex-006-template-literals.html">Exercise 006: Template Literals</a></li>
+<li class="item" data-text="exercise 7 data types (typeof)"><a href="chapter-01-javascript-basics-setup/ex-007-data-types-typeof.html">Exercise 007: Data Types (typeof)</a></li>
+<li class="item" data-text="exercise 8 booleans"><a href="chapter-01-javascript-basics-setup/ex-008-booleans.html">Exercise 008: Booleans</a></li>
+<li class="item" data-text="exercise 9 comparisons"><a href="chapter-01-javascript-basics-setup/ex-009-comparisons.html">Exercise 009: Comparisons</a></li>
+<li class="item" data-text="exercise 10 predict the output"><a href="chapter-01-javascript-basics-setup/ex-010-predict-the-output.html">Exercise 010: Predict the Output</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 2 — Strings, Numbers & Conversion</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 11 string methods: trim/touppercase"><a href="chapter-02-strings-numbers-conversion/ex-011-string-methods-trim-touppercase.html">Exercise 011: String Methods: trim/toUpperCase</a></li>
+<li class="item" data-text="exercise 12 substring & slice"><a href="chapter-02-strings-numbers-conversion/ex-012-substring-slice.html">Exercise 012: Substring & slice</a></li>
+<li class="item" data-text="exercise 13 search: includes/indexof"><a href="chapter-02-strings-numbers-conversion/ex-013-search-includes-indexof.html">Exercise 013: Search: includes/indexOf</a></li>
+<li class="item" data-text="exercise 14 replace & regex-lite"><a href="chapter-02-strings-numbers-conversion/ex-014-replace-regex-lite.html">Exercise 014: Replace & regex-lite</a></li>
+<li class="item" data-text="exercise 15 number parsing"><a href="chapter-02-strings-numbers-conversion/ex-015-number-parsing.html">Exercise 015: Number Parsing</a></li>
+<li class="item" data-text="exercise 16 nan & validation"><a href="chapter-02-strings-numbers-conversion/ex-016-nan-validation.html">Exercise 016: NaN & Validation</a></li>
+<li class="item" data-text="exercise 17 rounding"><a href="chapter-02-strings-numbers-conversion/ex-017-rounding.html">Exercise 017: Rounding</a></li>
+<li class="item" data-text="exercise 18 random numbers"><a href="chapter-02-strings-numbers-conversion/ex-018-random-numbers.html">Exercise 018: Random Numbers</a></li>
+<li class="item" data-text="exercise 19 formatting"><a href="chapter-02-strings-numbers-conversion/ex-019-formatting.html">Exercise 019: Formatting</a></li>
+<li class="item" data-text="exercise 20 mini challenge: tip calculator"><a href="chapter-02-strings-numbers-conversion/ex-020-mini-challenge-tip-calculator.html">Exercise 020: Mini Challenge: Tip Calculator</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 3 — Conditionals & Logic</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 21 if/else basics"><a href="chapter-03-conditionals-logic/ex-021-if-else-basics.html">Exercise 021: if/else Basics</a></li>
+<li class="item" data-text="exercise 22 else-if chains"><a href="chapter-03-conditionals-logic/ex-022-else-if-chains.html">Exercise 022: else-if Chains</a></li>
+<li class="item" data-text="exercise 23 truthiness"><a href="chapter-03-conditionals-logic/ex-023-truthiness.html">Exercise 023: Truthiness</a></li>
+<li class="item" data-text="exercise 24 logical operators"><a href="chapter-03-conditionals-logic/ex-024-logical-operators.html">Exercise 024: Logical Operators</a></li>
+<li class="item" data-text="exercise 25 ternary operator"><a href="chapter-03-conditionals-logic/ex-025-ternary-operator.html">Exercise 025: Ternary Operator</a></li>
+<li class="item" data-text="exercise 26 switch statement"><a href="chapter-03-conditionals-logic/ex-026-switch-statement.html">Exercise 026: Switch Statement</a></li>
+<li class="item" data-text="exercise 27 guard clauses"><a href="chapter-03-conditionals-logic/ex-027-guard-clauses.html">Exercise 027: Guard Clauses</a></li>
+<li class="item" data-text="exercise 28 input validation pattern"><a href="chapter-03-conditionals-logic/ex-028-input-validation-pattern.html">Exercise 028: Input Validation Pattern</a></li>
+<li class="item" data-text="exercise 29 edge cases"><a href="chapter-03-conditionals-logic/ex-029-edge-cases.html">Exercise 029: Edge Cases</a></li>
+<li class="item" data-text="exercise 30 mini challenge: grade evaluator"><a href="chapter-03-conditionals-logic/ex-030-mini-challenge-grade-evaluator.html">Exercise 030: Mini Challenge: Grade Evaluator</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 4 — Arrays & Iteration</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 31 create & index arrays"><a href="chapter-04-arrays-iteration/ex-031-create-index-arrays.html">Exercise 031: Create & Index Arrays</a></li>
+<li class="item" data-text="exercise 32 push/pop/shift/unshift"><a href="chapter-04-arrays-iteration/ex-032-push-pop-shift-unshift.html">Exercise 032: push/pop/shift/unshift</a></li>
+<li class="item" data-text="exercise 33 for loop over arrays"><a href="chapter-04-arrays-iteration/ex-033-for-loop-over-arrays.html">Exercise 033: for Loop Over Arrays</a></li>
+<li class="item" data-text="exercise 34 for...of loop"><a href="chapter-04-arrays-iteration/ex-034-for-of-loop.html">Exercise 034: for...of Loop</a></li>
+<li class="item" data-text="exercise 35 map()"><a href="chapter-04-arrays-iteration/ex-035-map.html">Exercise 035: map()</a></li>
+<li class="item" data-text="exercise 36 filter()"><a href="chapter-04-arrays-iteration/ex-036-filter.html">Exercise 036: filter()</a></li>
+<li class="item" data-text="exercise 37 reduce()"><a href="chapter-04-arrays-iteration/ex-037-reduce.html">Exercise 037: reduce()</a></li>
+<li class="item" data-text="exercise 38 find()/some()/every()"><a href="chapter-04-arrays-iteration/ex-038-find-some-every.html">Exercise 038: find()/some()/every()</a></li>
+<li class="item" data-text="exercise 39 sorting"><a href="chapter-04-arrays-iteration/ex-039-sorting.html">Exercise 039: Sorting</a></li>
+<li class="item" data-text="exercise 40 mini challenge: shopping list"><a href="chapter-04-arrays-iteration/ex-040-mini-challenge-shopping-list.html">Exercise 040: Mini Challenge: Shopping List</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 5 — Objects & Data Modeling</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 41 object literals"><a href="chapter-05-objects-data-modeling/ex-041-object-literals.html">Exercise 041: Object Literals</a></li>
+<li class="item" data-text="exercise 42 read/write properties"><a href="chapter-05-objects-data-modeling/ex-042-read-write-properties.html">Exercise 042: Read/Write Properties</a></li>
+<li class="item" data-text="exercise 43 nested objects"><a href="chapter-05-objects-data-modeling/ex-043-nested-objects.html">Exercise 043: Nested Objects</a></li>
+<li class="item" data-text="exercise 44 arrays of objects"><a href="chapter-05-objects-data-modeling/ex-044-arrays-of-objects.html">Exercise 044: Arrays of Objects</a></li>
+<li class="item" data-text="exercise 45 destructuring"><a href="chapter-05-objects-data-modeling/ex-045-destructuring.html">Exercise 045: Destructuring</a></li>
+<li class="item" data-text="exercise 46 optional chaining"><a href="chapter-05-objects-data-modeling/ex-046-optional-chaining.html">Exercise 046: Optional Chaining</a></li>
+<li class="item" data-text="exercise 47 default values"><a href="chapter-05-objects-data-modeling/ex-047-default-values.html">Exercise 047: Default Values</a></li>
+<li class="item" data-text="exercise 48 copy vs reference"><a href="chapter-05-objects-data-modeling/ex-048-copy-vs-reference.html">Exercise 048: Copy vs Reference</a></li>
+<li class="item" data-text="exercise 49 json stringify/parse"><a href="chapter-05-objects-data-modeling/ex-049-json-stringify-parse.html">Exercise 049: JSON stringify/parse</a></li>
+<li class="item" data-text="exercise 50 mini challenge: profile card data"><a href="chapter-05-objects-data-modeling/ex-050-mini-challenge-profile-card-data.html">Exercise 050: Mini Challenge: Profile Card Data</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 6 — Functions & Reusability</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 51 function declarations"><a href="chapter-06-functions-reusability/ex-051-function-declarations.html">Exercise 051: Function Declarations</a></li>
+<li class="item" data-text="exercise 52 parameters & arguments"><a href="chapter-06-functions-reusability/ex-052-parameters-arguments.html">Exercise 052: Parameters & Arguments</a></li>
+<li class="item" data-text="exercise 53 return values"><a href="chapter-06-functions-reusability/ex-053-return-values.html">Exercise 053: Return Values</a></li>
+<li class="item" data-text="exercise 54 function expressions"><a href="chapter-06-functions-reusability/ex-054-function-expressions.html">Exercise 054: Function Expressions</a></li>
+<li class="item" data-text="exercise 55 arrow functions"><a href="chapter-06-functions-reusability/ex-055-arrow-functions.html">Exercise 055: Arrow Functions</a></li>
+<li class="item" data-text="exercise 56 default parameters"><a href="chapter-06-functions-reusability/ex-056-default-parameters.html">Exercise 056: Default Parameters</a></li>
+<li class="item" data-text="exercise 57 rest parameters"><a href="chapter-06-functions-reusability/ex-057-rest-parameters.html">Exercise 057: Rest Parameters</a></li>
+<li class="item" data-text="exercise 58 pure vs impure"><a href="chapter-06-functions-reusability/ex-058-pure-vs-impure.html">Exercise 058: Pure vs Impure</a></li>
+<li class="item" data-text="exercise 59 higher-order functions"><a href="chapter-06-functions-reusability/ex-059-higher-order-functions.html">Exercise 059: Higher-Order Functions</a></li>
+<li class="item" data-text="exercise 60 mini challenge: utility toolkit"><a href="chapter-06-functions-reusability/ex-060-mini-challenge-utility-toolkit.html">Exercise 060: Mini Challenge: Utility Toolkit</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 7 — Scope, Closures & Modules</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 61 block scope"><a href="chapter-07-scope-closures-modules/ex-061-block-scope.html">Exercise 061: Block Scope</a></li>
+<li class="item" data-text="exercise 62 hoisting basics"><a href="chapter-07-scope-closures-modules/ex-062-hoisting-basics.html">Exercise 062: Hoisting Basics</a></li>
+<li class="item" data-text="exercise 63 closures intro"><a href="chapter-07-scope-closures-modules/ex-063-closures-intro.html">Exercise 063: Closures Intro</a></li>
+<li class="item" data-text="exercise 64 closure counter"><a href="chapter-07-scope-closures-modules/ex-064-closure-counter.html">Exercise 064: Closure Counter</a></li>
+<li class="item" data-text="exercise 65 iife pattern"><a href="chapter-07-scope-closures-modules/ex-065-iife-pattern.html">Exercise 065: IIFE Pattern</a></li>
+<li class="item" data-text="exercise 66 module pattern"><a href="chapter-07-scope-closures-modules/ex-066-module-pattern.html">Exercise 066: Module Pattern</a></li>
+<li class="item" data-text="exercise 67 factory functions"><a href="chapter-07-scope-closures-modules/ex-067-factory-functions.html">Exercise 067: Factory Functions</a></li>
+<li class="item" data-text="exercise 68 this basics"><a href="chapter-07-scope-closures-modules/ex-068-this-basics.html">Exercise 068: this Basics</a></li>
+<li class="item" data-text="exercise 69 bind/call/apply"><a href="chapter-07-scope-closures-modules/ex-069-bind-call-apply.html">Exercise 069: bind/call/apply</a></li>
+<li class="item" data-text="exercise 70 mini challenge: private settings"><a href="chapter-07-scope-closures-modules/ex-070-mini-challenge-private-settings.html">Exercise 070: Mini Challenge: Private Settings</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 8 — Loops, Patterns & Efficiency</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 71 while loops"><a href="chapter-08-loops-patterns-efficiency/ex-071-while-loops.html">Exercise 071: while Loops</a></li>
+<li class="item" data-text="exercise 72 do...while"><a href="chapter-08-loops-patterns-efficiency/ex-072-do-while.html">Exercise 072: do...while</a></li>
+<li class="item" data-text="exercise 73 nested loops"><a href="chapter-08-loops-patterns-efficiency/ex-073-nested-loops.html">Exercise 073: Nested Loops</a></li>
+<li class="item" data-text="exercise 74 break & continue"><a href="chapter-08-loops-patterns-efficiency/ex-074-break-continue.html">Exercise 074: Break & Continue</a></li>
+<li class="item" data-text="exercise 75 pattern: accumulator"><a href="chapter-08-loops-patterns-efficiency/ex-075-pattern-accumulator.html">Exercise 075: Pattern: Accumulator</a></li>
+<li class="item" data-text="exercise 76 pattern: sentinel"><a href="chapter-08-loops-patterns-efficiency/ex-076-pattern-sentinel.html">Exercise 076: Pattern: Sentinel</a></li>
+<li class="item" data-text="exercise 77 big-o intuition"><a href="chapter-08-loops-patterns-efficiency/ex-077-big-o-intuition.html">Exercise 077: Big-O Intuition</a></li>
+<li class="item" data-text="exercise 78 refactor for readability"><a href="chapter-08-loops-patterns-efficiency/ex-078-refactor-for-readability.html">Exercise 078: Refactor for Readability</a></li>
+<li class="item" data-text="exercise 79 mini challenge: frequency counter"><a href="chapter-08-loops-patterns-efficiency/ex-079-mini-challenge-frequency-counter.html">Exercise 079: Mini Challenge: Frequency Counter</a></li>
+<li class="item" data-text="exercise 80 mini challenge: unique values"><a href="chapter-08-loops-patterns-efficiency/ex-080-mini-challenge-unique-values.html">Exercise 080: Mini Challenge: Unique Values</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 9 — Errors, Debugging & Testing Mindset</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 81 common errors tour"><a href="chapter-09-errors-debugging-testing-minds/ex-081-common-errors-tour.html">Exercise 081: Common Errors Tour</a></li>
+<li class="item" data-text="exercise 82 try/catch"><a href="chapter-09-errors-debugging-testing-minds/ex-082-try-catch.html">Exercise 082: try/catch</a></li>
+<li class="item" data-text="exercise 83 throwing errors"><a href="chapter-09-errors-debugging-testing-minds/ex-083-throwing-errors.html">Exercise 083: Throwing Errors</a></li>
+<li class="item" data-text="exercise 84 debugging with logs"><a href="chapter-09-errors-debugging-testing-minds/ex-084-debugging-with-logs.html">Exercise 084: Debugging with logs</a></li>
+<li class="item" data-text="exercise 85 console tools"><a href="chapter-09-errors-debugging-testing-minds/ex-085-console-tools.html">Exercise 085: Console Tools</a></li>
+<li class="item" data-text="exercise 86 assertions"><a href="chapter-09-errors-debugging-testing-minds/ex-086-assertions.html">Exercise 086: Assertions</a></li>
+<li class="item" data-text="exercise 87 edge case checklist"><a href="chapter-09-errors-debugging-testing-minds/ex-087-edge-case-checklist.html">Exercise 087: Edge Case Checklist</a></li>
+<li class="item" data-text="exercise 88 input sanitization"><a href="chapter-09-errors-debugging-testing-minds/ex-088-input-sanitization.html">Exercise 088: Input Sanitization</a></li>
+<li class="item" data-text="exercise 89 mini challenge: safe calculator"><a href="chapter-09-errors-debugging-testing-minds/ex-089-mini-challenge-safe-calculator.html">Exercise 089: Mini Challenge: Safe Calculator</a></li>
+<li class="item" data-text="exercise 90 mini challenge: self-test"><a href="chapter-09-errors-debugging-testing-minds/ex-090-mini-challenge-self-test.html">Exercise 090: Mini Challenge: Self-Test</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 10 — Clean Code & Small Architectures</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 91 naming conventions"><a href="chapter-10-clean-code-small-architectures/ex-091-naming-conventions.html">Exercise 091: Naming Conventions</a></li>
+<li class="item" data-text="exercise 92 single responsibility"><a href="chapter-10-clean-code-small-architectures/ex-092-single-responsibility.html">Exercise 092: Single Responsibility</a></li>
+<li class="item" data-text="exercise 93 dry vs wet"><a href="chapter-10-clean-code-small-architectures/ex-093-dry-vs-wet.html">Exercise 093: DRY vs WET</a></li>
+<li class="item" data-text="exercise 94 config objects"><a href="chapter-10-clean-code-small-architectures/ex-094-config-objects.html">Exercise 094: Config Objects</a></li>
+<li class="item" data-text="exercise 95 state objects"><a href="chapter-10-clean-code-small-architectures/ex-095-state-objects.html">Exercise 095: State Objects</a></li>
+<li class="item" data-text="exercise 96 event-driven thinking"><a href="chapter-10-clean-code-small-architectures/ex-096-event-driven-thinking.html">Exercise 096: Event-Driven Thinking</a></li>
+<li class="item" data-text="exercise 97 separation: logic vs ui"><a href="chapter-10-clean-code-small-architectures/ex-097-separation-logic-vs-ui.html">Exercise 097: Separation: logic vs UI</a></li>
+<li class="item" data-text="exercise 98 refactoring exercise"><a href="chapter-10-clean-code-small-architectures/ex-098-refactoring-exercise.html">Exercise 098: Refactoring Exercise</a></li>
+<li class="item" data-text="exercise 99 mini challenge: settings panel"><a href="chapter-10-clean-code-small-architectures/ex-099-mini-challenge-settings-panel.html">Exercise 099: Mini Challenge: Settings Panel</a></li>
+<li class="item" data-text="exercise 100 mini challenge: simple router"><a href="chapter-10-clean-code-small-architectures/ex-100-mini-challenge-simple-router.html">Exercise 100: Mini Challenge: Simple Router</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 11 — DOM Basics</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 101 select elements"><a href="chapter-11-dom-basics/ex-101-select-elements.html">Exercise 101: Select Elements</a></li>
+<li class="item" data-text="exercise 102 read/write text"><a href="chapter-11-dom-basics/ex-102-read-write-text.html">Exercise 102: Read/Write Text</a></li>
+<li class="item" data-text="exercise 103 attributes"><a href="chapter-11-dom-basics/ex-103-attributes.html">Exercise 103: Attributes</a></li>
+<li class="item" data-text="exercise 104 classes"><a href="chapter-11-dom-basics/ex-104-classes.html">Exercise 104: Classes</a></li>
+<li class="item" data-text="exercise 105 create elements"><a href="chapter-11-dom-basics/ex-105-create-elements.html">Exercise 105: Create Elements</a></li>
+<li class="item" data-text="exercise 106 append/prepend"><a href="chapter-11-dom-basics/ex-106-append-prepend.html">Exercise 106: Append/Prepend</a></li>
+<li class="item" data-text="exercise 107 remove/replace"><a href="chapter-11-dom-basics/ex-107-remove-replace.html">Exercise 107: Remove/Replace</a></li>
+<li class="item" data-text="exercise 108 dom traversal"><a href="chapter-11-dom-basics/ex-108-dom-traversal.html">Exercise 108: DOM Traversal</a></li>
+<li class="item" data-text="exercise 109 mini challenge: quote generator ui"><a href="chapter-11-dom-basics/ex-109-mini-challenge-quote-generator-ui.html">Exercise 109: Mini Challenge: Quote Generator UI</a></li>
+<li class="item" data-text="exercise 110 mini challenge: card renderer"><a href="chapter-11-dom-basics/ex-110-mini-challenge-card-renderer.html">Exercise 110: Mini Challenge: Card Renderer</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 12 — DOM Events</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 111 click events"><a href="chapter-12-dom-events/ex-111-click-events.html">Exercise 111: Click Events</a></li>
+<li class="item" data-text="exercise 112 input events"><a href="chapter-12-dom-events/ex-112-input-events.html">Exercise 112: Input Events</a></li>
+<li class="item" data-text="exercise 113 event object"><a href="chapter-12-dom-events/ex-113-event-object.html">Exercise 113: Event Object</a></li>
+<li class="item" data-text="exercise 114 event delegation"><a href="chapter-12-dom-events/ex-114-event-delegation.html">Exercise 114: Event Delegation</a></li>
+<li class="item" data-text="exercise 115 keyboard events"><a href="chapter-12-dom-events/ex-115-keyboard-events.html">Exercise 115: Keyboard Events</a></li>
+<li class="item" data-text="exercise 116 form submit"><a href="chapter-12-dom-events/ex-116-form-submit.html">Exercise 116: Form Submit</a></li>
+<li class="item" data-text="exercise 117 focus/blur"><a href="chapter-12-dom-events/ex-117-focus-blur.html">Exercise 117: Focus/Blur</a></li>
+<li class="item" data-text="exercise 118 pointer events"><a href="chapter-12-dom-events/ex-118-pointer-events.html">Exercise 118: Pointer Events</a></li>
+<li class="item" data-text="exercise 119 mini challenge: interactive list"><a href="chapter-12-dom-events/ex-119-mini-challenge-interactive-list.html">Exercise 119: Mini Challenge: Interactive List</a></li>
+<li class="item" data-text="exercise 120 mini challenge: shortcut palette"><a href="chapter-12-dom-events/ex-120-mini-challenge-shortcut-palette.html">Exercise 120: Mini Challenge: Shortcut Palette</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 13 — Dynamic UI & Rendering</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 121 render from array"><a href="chapter-13-dynamic-ui-rendering/ex-121-render-from-array.html">Exercise 121: Render from Array</a></li>
+<li class="item" data-text="exercise 122 template functions"><a href="chapter-13-dynamic-ui-rendering/ex-122-template-functions.html">Exercise 122: Template Functions</a></li>
+<li class="item" data-text="exercise 123 diff-lite update"><a href="chapter-13-dynamic-ui-rendering/ex-123-diff-lite-update.html">Exercise 123: Diff-lite Update</a></li>
+<li class="item" data-text="exercise 124 empty states"><a href="chapter-13-dynamic-ui-rendering/ex-124-empty-states.html">Exercise 124: Empty States</a></li>
+<li class="item" data-text="exercise 125 loading states"><a href="chapter-13-dynamic-ui-rendering/ex-125-loading-states.html">Exercise 125: Loading States</a></li>
+<li class="item" data-text="exercise 126 error states"><a href="chapter-13-dynamic-ui-rendering/ex-126-error-states.html">Exercise 126: Error States</a></li>
+<li class="item" data-text="exercise 127 pagination"><a href="chapter-13-dynamic-ui-rendering/ex-127-pagination.html">Exercise 127: Pagination</a></li>
+<li class="item" data-text="exercise 128 search filter"><a href="chapter-13-dynamic-ui-rendering/ex-128-search-filter.html">Exercise 128: Search Filter</a></li>
+<li class="item" data-text="exercise 129 mini challenge: product grid"><a href="chapter-13-dynamic-ui-rendering/ex-129-mini-challenge-product-grid.html">Exercise 129: Mini Challenge: Product Grid</a></li>
+<li class="item" data-text="exercise 130 mini challenge: notes ui"><a href="chapter-13-dynamic-ui-rendering/ex-130-mini-challenge-notes-ui.html">Exercise 130: Mini Challenge: Notes UI</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 14 — Forms & Validation</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 131 required fields"><a href="chapter-14-forms-validation/ex-131-required-fields.html">Exercise 131: Required Fields</a></li>
+<li class="item" data-text="exercise 132 email pattern"><a href="chapter-14-forms-validation/ex-132-email-pattern.html">Exercise 132: Email Pattern</a></li>
+<li class="item" data-text="exercise 133 password rules"><a href="chapter-14-forms-validation/ex-133-password-rules.html">Exercise 133: Password Rules</a></li>
+<li class="item" data-text="exercise 134 inline errors"><a href="chapter-14-forms-validation/ex-134-inline-errors.html">Exercise 134: Inline Errors</a></li>
+<li class="item" data-text="exercise 135 debounced validation"><a href="chapter-14-forms-validation/ex-135-debounced-validation.html">Exercise 135: Debounced Validation</a></li>
+<li class="item" data-text="exercise 136 form serialization"><a href="chapter-14-forms-validation/ex-136-form-serialization.html">Exercise 136: Form Serialization</a></li>
+<li class="item" data-text="exercise 137 checkbox/radio"><a href="chapter-14-forms-validation/ex-137-checkbox-radio.html">Exercise 137: Checkbox/Radio</a></li>
+<li class="item" data-text="exercise 138 select inputs"><a href="chapter-14-forms-validation/ex-138-select-inputs.html">Exercise 138: Select Inputs</a></li>
+<li class="item" data-text="exercise 139 mini challenge: signup form"><a href="chapter-14-forms-validation/ex-139-mini-challenge-signup-form.html">Exercise 139: Mini Challenge: Signup Form</a></li>
+<li class="item" data-text="exercise 140 mini challenge: survey builder"><a href="chapter-14-forms-validation/ex-140-mini-challenge-survey-builder.html">Exercise 140: Mini Challenge: Survey Builder</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 15 — UI State & Components (Vanilla)</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 141 state store"><a href="chapter-15-ui-state-components-vanilla/ex-141-state-store.html">Exercise 141: State Store</a></li>
+<li class="item" data-text="exercise 142 toggle component"><a href="chapter-15-ui-state-components-vanilla/ex-142-toggle-component.html">Exercise 142: Toggle Component</a></li>
+<li class="item" data-text="exercise 143 tabs component"><a href="chapter-15-ui-state-components-vanilla/ex-143-tabs-component.html">Exercise 143: Tabs Component</a></li>
+<li class="item" data-text="exercise 144 modal component"><a href="chapter-15-ui-state-components-vanilla/ex-144-modal-component.html">Exercise 144: Modal Component</a></li>
+<li class="item" data-text="exercise 145 toast notifications"><a href="chapter-15-ui-state-components-vanilla/ex-145-toast-notifications.html">Exercise 145: Toast Notifications</a></li>
+<li class="item" data-text="exercise 146 accordion"><a href="chapter-15-ui-state-components-vanilla/ex-146-accordion.html">Exercise 146: Accordion</a></li>
+<li class="item" data-text="exercise 147 theme switcher"><a href="chapter-15-ui-state-components-vanilla/ex-147-theme-switcher.html">Exercise 147: Theme Switcher</a></li>
+<li class="item" data-text="exercise 148 accessibility basics"><a href="chapter-15-ui-state-components-vanilla/ex-148-accessibility-basics.html">Exercise 148: Accessibility Basics</a></li>
+<li class="item" data-text="exercise 149 mini challenge: dashboard widgets"><a href="chapter-15-ui-state-components-vanilla/ex-149-mini-challenge-dashboard-widgets.html">Exercise 149: Mini Challenge: Dashboard Widgets</a></li>
+<li class="item" data-text="exercise 150 mini challenge: component library starter"><a href="chapter-15-ui-state-components-vanilla/ex-150-mini-challenge-component-library-starter.html">Exercise 150: Mini Challenge: Component Library Starter</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 16 — Styling & Animation with JS</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 151 css variables"><a href="chapter-16-styling-animation-with-js/ex-151-css-variables.html">Exercise 151: CSS Variables</a></li>
+<li class="item" data-text="exercise 152 class-based animations"><a href="chapter-16-styling-animation-with-js/ex-152-class-based-animations.html">Exercise 152: Class-based Animations</a></li>
+<li class="item" data-text="exercise 153 requestanimationframe"><a href="chapter-16-styling-animation-with-js/ex-153-requestanimationframe.html">Exercise 153: requestAnimationFrame</a></li>
+<li class="item" data-text="exercise 154 progress bar"><a href="chapter-16-styling-animation-with-js/ex-154-progress-bar.html">Exercise 154: Progress Bar</a></li>
+<li class="item" data-text="exercise 155 scroll spy"><a href="chapter-16-styling-animation-with-js/ex-155-scroll-spy.html">Exercise 155: Scroll Spy</a></li>
+<li class="item" data-text="exercise 156 intersectionobserver"><a href="chapter-16-styling-animation-with-js/ex-156-intersectionobserver.html">Exercise 156: IntersectionObserver</a></li>
+<li class="item" data-text="exercise 157 drag basics"><a href="chapter-16-styling-animation-with-js/ex-157-drag-basics.html">Exercise 157: Drag Basics</a></li>
+<li class="item" data-text="exercise 158 drop zones"><a href="chapter-16-styling-animation-with-js/ex-158-drop-zones.html">Exercise 158: Drop Zones</a></li>
+<li class="item" data-text="exercise 159 mini challenge: animated menu"><a href="chapter-16-styling-animation-with-js/ex-159-mini-challenge-animated-menu.html">Exercise 159: Mini Challenge: Animated Menu</a></li>
+<li class="item" data-text="exercise 160 mini challenge: kanban drag/drop lite"><a href="chapter-16-styling-animation-with-js/ex-160-mini-challenge-kanban-drag-drop-lite.html">Exercise 160: Mini Challenge: Kanban Drag/Drop Lite</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 17 — Timers & Async Basics</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 161 settimeout"><a href="chapter-17-timers-async-basics/ex-161-settimeout.html">Exercise 161: setTimeout</a></li>
+<li class="item" data-text="exercise 162 setinterval"><a href="chapter-17-timers-async-basics/ex-162-setinterval.html">Exercise 162: setInterval</a></li>
+<li class="item" data-text="exercise 163 countdown timer"><a href="chapter-17-timers-async-basics/ex-163-countdown-timer.html">Exercise 163: Countdown Timer</a></li>
+<li class="item" data-text="exercise 164 stopwatch"><a href="chapter-17-timers-async-basics/ex-164-stopwatch.html">Exercise 164: Stopwatch</a></li>
+<li class="item" data-text="exercise 165 debounce"><a href="chapter-17-timers-async-basics/ex-165-debounce.html">Exercise 165: Debounce</a></li>
+<li class="item" data-text="exercise 166 throttle"><a href="chapter-17-timers-async-basics/ex-166-throttle.html">Exercise 166: Throttle</a></li>
+<li class="item" data-text="exercise 167 async mindset"><a href="chapter-17-timers-async-basics/ex-167-async-mindset.html">Exercise 167: Async Mindset</a></li>
+<li class="item" data-text="exercise 168 promises intro"><a href="chapter-17-timers-async-basics/ex-168-promises-intro.html">Exercise 168: Promises Intro</a></li>
+<li class="item" data-text="exercise 169 mini challenge: pomodoro timer"><a href="chapter-17-timers-async-basics/ex-169-mini-challenge-pomodoro-timer.html">Exercise 169: Mini Challenge: Pomodoro Timer</a></li>
+<li class="item" data-text="exercise 170 mini challenge: auto-save draft"><a href="chapter-17-timers-async-basics/ex-170-mini-challenge-auto-save-draft.html">Exercise 170: Mini Challenge: Auto-Save Draft</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 18 — Promises & Async Patterns</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 171 promise chains"><a href="chapter-18-promises-async-patterns/ex-171-promise-chains.html">Exercise 171: Promise Chains</a></li>
+<li class="item" data-text="exercise 172 promise error handling"><a href="chapter-18-promises-async-patterns/ex-172-promise-error-handling.html">Exercise 172: Promise Error Handling</a></li>
+<li class="item" data-text="exercise 173 promise.all"><a href="chapter-18-promises-async-patterns/ex-173-promise-all.html">Exercise 173: Promise.all</a></li>
+<li class="item" data-text="exercise 174 promise.race"><a href="chapter-18-promises-async-patterns/ex-174-promise-race.html">Exercise 174: Promise.race</a></li>
+<li class="item" data-text="exercise 175 timeout wrapper"><a href="chapter-18-promises-async-patterns/ex-175-timeout-wrapper.html">Exercise 175: Timeout Wrapper</a></li>
+<li class="item" data-text="exercise 176 retry pattern"><a href="chapter-18-promises-async-patterns/ex-176-retry-pattern.html">Exercise 176: Retry Pattern</a></li>
+<li class="item" data-text="exercise 177 async queue"><a href="chapter-18-promises-async-patterns/ex-177-async-queue.html">Exercise 177: Async Queue</a></li>
+<li class="item" data-text="exercise 178 async event flow"><a href="chapter-18-promises-async-patterns/ex-178-async-event-flow.html">Exercise 178: Async Event Flow</a></li>
+<li class="item" data-text="exercise 179 mini challenge: image preloader"><a href="chapter-18-promises-async-patterns/ex-179-mini-challenge-image-preloader.html">Exercise 179: Mini Challenge: Image Preloader</a></li>
+<li class="item" data-text="exercise 180 mini challenge: parallel fetch summary"><a href="chapter-18-promises-async-patterns/ex-180-mini-challenge-parallel-fetch-summary.html">Exercise 180: Mini Challenge: Parallel Fetch Summary</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 19 — Fetch API & Working with Data</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 181 fetch json"><a href="chapter-19-fetch-api-working-with-data/ex-181-fetch-json.html">Exercise 181: Fetch JSON</a></li>
+<li class="item" data-text="exercise 182 headers & status"><a href="chapter-19-fetch-api-working-with-data/ex-182-headers-status.html">Exercise 182: Headers & Status</a></li>
+<li class="item" data-text="exercise 183 query params"><a href="chapter-19-fetch-api-working-with-data/ex-183-query-params.html">Exercise 183: Query Params</a></li>
+<li class="item" data-text="exercise 184 post json"><a href="chapter-19-fetch-api-working-with-data/ex-184-post-json.html">Exercise 184: POST JSON</a></li>
+<li class="item" data-text="exercise 185 abortcontroller"><a href="chapter-19-fetch-api-working-with-data/ex-185-abortcontroller.html">Exercise 185: AbortController</a></li>
+<li class="item" data-text="exercise 186 caching basics"><a href="chapter-19-fetch-api-working-with-data/ex-186-caching-basics.html">Exercise 186: Caching Basics</a></li>
+<li class="item" data-text="exercise 187 rate limiting"><a href="chapter-19-fetch-api-working-with-data/ex-187-rate-limiting.html">Exercise 187: Rate Limiting</a></li>
+<li class="item" data-text="exercise 188 skeleton ui"><a href="chapter-19-fetch-api-working-with-data/ex-188-skeleton-ui.html">Exercise 188: Skeleton UI</a></li>
+<li class="item" data-text="exercise 189 mini challenge: data table viewer"><a href="chapter-19-fetch-api-working-with-data/ex-189-mini-challenge-data-table-viewer.html">Exercise 189: Mini Challenge: Data Table Viewer</a></li>
+<li class="item" data-text="exercise 190 mini challenge: weather ui mock"><a href="chapter-19-fetch-api-working-with-data/ex-190-mini-challenge-weather-ui-mock.html">Exercise 190: Mini Challenge: Weather UI Mock</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 20 — Async/Await Mastery</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 191 async/await basics"><a href="chapter-20-async-await-mastery/ex-191-async-await-basics.html">Exercise 191: Async/Await Basics</a></li>
+<li class="item" data-text="exercise 192 try/catch with await"><a href="chapter-20-async-await-mastery/ex-192-try-catch-with-await.html">Exercise 192: try/catch with await</a></li>
+<li class="item" data-text="exercise 193 sequential vs parallel"><a href="chapter-20-async-await-mastery/ex-193-sequential-vs-parallel.html">Exercise 193: Sequential vs Parallel</a></li>
+<li class="item" data-text="exercise 194 async iteration"><a href="chapter-20-async-await-mastery/ex-194-async-iteration.html">Exercise 194: Async Iteration</a></li>
+<li class="item" data-text="exercise 195 async reducer"><a href="chapter-20-async-await-mastery/ex-195-async-reducer.html">Exercise 195: Async Reducer</a></li>
+<li class="item" data-text="exercise 196 async form submit"><a href="chapter-20-async-await-mastery/ex-196-async-form-submit.html">Exercise 196: Async Form Submit</a></li>
+<li class="item" data-text="exercise 197 optimistic ui"><a href="chapter-20-async-await-mastery/ex-197-optimistic-ui.html">Exercise 197: Optimistic UI</a></li>
+<li class="item" data-text="exercise 198 rollback on failure"><a href="chapter-20-async-await-mastery/ex-198-rollback-on-failure.html">Exercise 198: Rollback on Failure</a></li>
+<li class="item" data-text="exercise 199 mini challenge: async search"><a href="chapter-20-async-await-mastery/ex-199-mini-challenge-async-search.html">Exercise 199: Mini Challenge: Async Search</a></li>
+<li class="item" data-text="exercise 200 mini challenge: mini api client"><a href="chapter-20-async-await-mastery/ex-200-mini-challenge-mini-api-client.html">Exercise 200: Mini Challenge: Mini API Client</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 21 — Local Storage & Persistence</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 201 save simple values"><a href="chapter-21-local-storage-persistence/ex-201-save-simple-values.html">Exercise 201: Save Simple Values</a></li>
+<li class="item" data-text="exercise 202 save objects"><a href="chapter-21-local-storage-persistence/ex-202-save-objects.html">Exercise 202: Save Objects</a></li>
+<li class="item" data-text="exercise 203 app settings"><a href="chapter-21-local-storage-persistence/ex-203-app-settings.html">Exercise 203: App Settings</a></li>
+<li class="item" data-text="exercise 204 saved lists"><a href="chapter-21-local-storage-persistence/ex-204-saved-lists.html">Exercise 204: Saved Lists</a></li>
+<li class="item" data-text="exercise 205 migrations"><a href="chapter-21-local-storage-persistence/ex-205-migrations.html">Exercise 205: Migrations</a></li>
+<li class="item" data-text="exercise 206 session vs local"><a href="chapter-21-local-storage-persistence/ex-206-session-vs-local.html">Exercise 206: Session vs Local</a></li>
+<li class="item" data-text="exercise 207 storage events"><a href="chapter-21-local-storage-persistence/ex-207-storage-events.html">Exercise 207: Storage Events</a></li>
+<li class="item" data-text="exercise 208 export/import json"><a href="chapter-21-local-storage-persistence/ex-208-export-import-json.html">Exercise 208: Export/Import JSON</a></li>
+<li class="item" data-text="exercise 209 mini challenge: notes app persistence"><a href="chapter-21-local-storage-persistence/ex-209-mini-challenge-notes-app-persistence.html">Exercise 209: Mini Challenge: Notes App Persistence</a></li>
+<li class="item" data-text="exercise 210 mini challenge: habit tracker"><a href="chapter-21-local-storage-persistence/ex-210-mini-challenge-habit-tracker.html">Exercise 210: Mini Challenge: Habit Tracker</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 22 — Reusable Patterns & Mini Architectures</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 211 pub/sub events"><a href="chapter-22-reusable-patterns-mini-archite/ex-211-pub-sub-events.html">Exercise 211: Pub/Sub Events</a></li>
+<li class="item" data-text="exercise 212 finite state machine"><a href="chapter-22-reusable-patterns-mini-archite/ex-212-finite-state-machine.html">Exercise 212: Finite State Machine</a></li>
+<li class="item" data-text="exercise 213 command pattern"><a href="chapter-22-reusable-patterns-mini-archite/ex-213-command-pattern.html">Exercise 213: Command Pattern</a></li>
+<li class="item" data-text="exercise 214 observer pattern"><a href="chapter-22-reusable-patterns-mini-archite/ex-214-observer-pattern.html">Exercise 214: Observer Pattern</a></li>
+<li class="item" data-text="exercise 215 factory + config"><a href="chapter-22-reusable-patterns-mini-archite/ex-215-factory-config.html">Exercise 215: Factory + Config</a></li>
+<li class="item" data-text="exercise 216 validation library"><a href="chapter-22-reusable-patterns-mini-archite/ex-216-validation-library.html">Exercise 216: Validation Library</a></li>
+<li class="item" data-text="exercise 217 formatting helpers"><a href="chapter-22-reusable-patterns-mini-archite/ex-217-formatting-helpers.html">Exercise 217: Formatting Helpers</a></li>
+<li class="item" data-text="exercise 218 api wrapper"><a href="chapter-22-reusable-patterns-mini-archite/ex-218-api-wrapper.html">Exercise 218: API Wrapper</a></li>
+<li class="item" data-text="exercise 219 mini challenge: undoable counter"><a href="chapter-22-reusable-patterns-mini-archite/ex-219-mini-challenge-undoable-counter.html">Exercise 219: Mini Challenge: Undoable Counter</a></li>
+<li class="item" data-text="exercise 220 mini challenge: form wizard"><a href="chapter-22-reusable-patterns-mini-archite/ex-220-mini-challenge-form-wizard.html">Exercise 220: Mini Challenge: Form Wizard</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 23 — Mini Apps (Built from Earlier Work)</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 221 to-do app v1"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-221-to-do-app-v1.html">Exercise 221: To-Do App v1</a></li>
+<li class="item" data-text="exercise 222 to-do app v2"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-222-to-do-app-v2.html">Exercise 222: To-Do App v2</a></li>
+<li class="item" data-text="exercise 223 quiz app v1"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-223-quiz-app-v1.html">Exercise 223: Quiz App v1</a></li>
+<li class="item" data-text="exercise 224 quiz app v2"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-224-quiz-app-v2.html">Exercise 224: Quiz App v2</a></li>
+<li class="item" data-text="exercise 225 recipe finder mock"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-225-recipe-finder-mock.html">Exercise 225: Recipe Finder Mock</a></li>
+<li class="item" data-text="exercise 226 kanban lite v1"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-226-kanban-lite-v1.html">Exercise 226: Kanban Lite v1</a></li>
+<li class="item" data-text="exercise 227 kanban lite v2"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-227-kanban-lite-v2.html">Exercise 227: Kanban Lite v2</a></li>
+<li class="item" data-text="exercise 228 chat ui mock"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-228-chat-ui-mock.html">Exercise 228: Chat UI Mock</a></li>
+<li class="item" data-text="exercise 229 mini challenge: habit dashboard"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-229-mini-challenge-habit-dashboard.html">Exercise 229: Mini Challenge: Habit Dashboard</a></li>
+<li class="item" data-text="exercise 230 mini challenge: portfolio landing"><a href="chapter-23-mini-apps-built-from-earlier-w/ex-230-mini-challenge-portfolio-landing.html">Exercise 230: Mini Challenge: Portfolio Landing</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 24 — Polish: Performance, Accessibility, Deployment</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 231 performance basics"><a href="chapter-24-polish-performance-accessibili/ex-231-performance-basics.html">Exercise 231: Performance Basics</a></li>
+<li class="item" data-text="exercise 232 memoization"><a href="chapter-24-polish-performance-accessibili/ex-232-memoization.html">Exercise 232: Memoization</a></li>
+<li class="item" data-text="exercise 233 virtualization lite"><a href="chapter-24-polish-performance-accessibili/ex-233-virtualization-lite.html">Exercise 233: Virtualization Lite</a></li>
+<li class="item" data-text="exercise 234 accessibility: keyboard"><a href="chapter-24-polish-performance-accessibili/ex-234-accessibility-keyboard.html">Exercise 234: Accessibility: Keyboard</a></li>
+<li class="item" data-text="exercise 235 accessibility: aria"><a href="chapter-24-polish-performance-accessibili/ex-235-accessibility-aria.html">Exercise 235: Accessibility: ARIA</a></li>
+<li class="item" data-text="exercise 236 responsive ui"><a href="chapter-24-polish-performance-accessibili/ex-236-responsive-ui.html">Exercise 236: Responsive UI</a></li>
+<li class="item" data-text="exercise 237 error reporting"><a href="chapter-24-polish-performance-accessibili/ex-237-error-reporting.html">Exercise 237: Error Reporting</a></li>
+<li class="item" data-text="exercise 238 feature flags"><a href="chapter-24-polish-performance-accessibili/ex-238-feature-flags.html">Exercise 238: Feature Flags</a></li>
+<li class="item" data-text="exercise 239 mini challenge: audit & refactor"><a href="chapter-24-polish-performance-accessibili/ex-239-mini-challenge-audit-refactor.html">Exercise 239: Mini Challenge: Audit & Refactor</a></li>
+<li class="item" data-text="exercise 240 mini challenge: deploy checklist"><a href="chapter-24-polish-performance-accessibili/ex-240-mini-challenge-deploy-checklist.html">Exercise 240: Mini Challenge: Deploy Checklist</a></li>
+  </ol>
+</section><section class="card">
+  <h2>Chapter 25 — AI-Assisted JavaScript Mastery</h2>
+  <ol class="ex">
+    <li class="item" data-text="exercise 241 prompting for explanations"><a href="chapter-25-ai-assisted-javascript-mastery/ex-241-prompting-for-explanations.html">Exercise 241: Prompting for Explanations</a></li>
+<li class="item" data-text="exercise 242 prompting for refactors"><a href="chapter-25-ai-assisted-javascript-mastery/ex-242-prompting-for-refactors.html">Exercise 242: Prompting for Refactors</a></li>
+<li class="item" data-text="exercise 243 prompting for tests"><a href="chapter-25-ai-assisted-javascript-mastery/ex-243-prompting-for-tests.html">Exercise 243: Prompting for Tests</a></li>
+<li class="item" data-text="exercise 244 prompting for debugging"><a href="chapter-25-ai-assisted-javascript-mastery/ex-244-prompting-for-debugging.html">Exercise 244: Prompting for Debugging</a></li>
+<li class="item" data-text="exercise 245 prompting for alternatives"><a href="chapter-25-ai-assisted-javascript-mastery/ex-245-prompting-for-alternatives.html">Exercise 245: Prompting for Alternatives</a></li>
+<li class="item" data-text="exercise 246 ai + code reviews"><a href="chapter-25-ai-assisted-javascript-mastery/ex-246-ai-code-reviews.html">Exercise 246: AI + Code Reviews</a></li>
+<li class="item" data-text="exercise 247 ai for documentation"><a href="chapter-25-ai-assisted-javascript-mastery/ex-247-ai-for-documentation.html">Exercise 247: AI for Documentation</a></li>
+<li class="item" data-text="exercise 248 ai for learning plans"><a href="chapter-25-ai-assisted-javascript-mastery/ex-248-ai-for-learning-plans.html">Exercise 248: AI for Learning Plans</a></li>
+<li class="item" data-text="exercise 249 mini challenge: improve a project"><a href="chapter-25-ai-assisted-javascript-mastery/ex-249-mini-challenge-improve-a-project.html">Exercise 249: Mini Challenge: Improve a Project</a></li>
+<li class="item" data-text="exercise 250 mini challenge: portfolio narrative"><a href="chapter-25-ai-assisted-javascript-mastery/ex-250-mini-challenge-portfolio-narrative.html">Exercise 250: Mini Challenge: Portfolio Narrative</a></li>
+  </ol>
+</section>
+  </div>
+</div>
+
+<script>
+const q = document.querySelector("#q");
+const items = Array.from(document.querySelectorAll(".item"));
+const count = document.querySelector("#count");
+
+function applyFilter() {
+  const term = q.value.trim().toLowerCase();
+  let visible = 0;
+  for (const li of items) {
+    const ok = !term || li.dataset.text.includes(term);
+    li.style.display = ok ? "" : "none";
+    if (ok) visible++;
+  }
+  count.textContent = visible + " shown";
+}
+q.addEventListener("input", applyFilter);
+applyFilter();
+</script>
+</body>
+</html>

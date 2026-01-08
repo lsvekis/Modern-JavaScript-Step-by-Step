@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>250-Exercise Blueprint</title>
+<style>
+  :root { --bg:#0b1020; --panel:#121a33; --text:#e8ecff; --muted:#a7b0d6; --accent:#7aa2ff; }
+  body { margin:0; font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); }
+  header { padding:18px; border-bottom:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(122,162,255,.14), transparent); }
+  .wrap { max-width:980px; margin:0 auto; padding:18px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  pre { background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px; overflow:auto; }
+  h1 { margin:0; font-size:24px; }
+  h2 { margin-top:18px; }
+  p, li { color:var(--muted); }
+  .top { margin-top:10px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>250-Exercise Blueprint</h1>
+    <div class="top"><a href="index.html">← Back to Index</a></div>
+  </div>
+</header>
+<div class="wrap">
+<h1>250-Exercise Blueprint</h1>
+
+<p>Each item includes a short objective and the file path.</p>
+
+<ul>
+<li>**001** — Console Output</li>
+</ul>
+<p>_Use console.log to observe program behavior._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-001-console-output.html`</p>
+
+<ul>
+<li>**002** — Variables (let/const)</li>
+</ul>
+<p>_Store values in variables and print them._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-002-variables-let-const.html`</p>
+
+<ul>
+<li>**003** — Reassignment</li>
+</ul>
+<p>_Update variables and understand state changes._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-003-reassignment.html`</p>
+
+<ul>
+<li>**004** — Numbers & Math</li>
+</ul>
+<p>_Perform arithmetic and store results._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-004-numbers-math.html`</p>
+
+<ul>
+<li>**005** — Strings & Concatenation</li>
+</ul>
+<p>_Build messages by combining strings._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-005-strings-concatenation.html`</p>
+
+<ul>
+<li>**006** — Template Literals</li>
+</ul>
+<p>_Use backticks and ${} for readable strings._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-006-template-literals.html`</p>
+
+<ul>
+<li>**007** — Data Types (typeof)</li>
+</ul>
+<p>_Inspect types and reason about values._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-007-data-types-typeof.html`</p>
+
+<ul>
+<li>**008** — Booleans</li>
+</ul>
+<p>_Use true/false to represent conditions._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-008-booleans.html`</p>
+
+<ul>
+<li>**009** — Comparisons</li>
+</ul>
+<p>_Compare values with >, <, === and interpret results._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-009-comparisons.html`</p>
+
+<ul>
+<li>**010** — Predict the Output</li>
+</ul>
+<p>_Practice tracing code execution order._</p>
+<p>File: `chapter-01-javascript-basics-setup/ex-010-predict-the-output.html`</p>
+
+<ul>
+<li>**011** — String Methods: trim/toUpperCase</li>
+</ul>
+<p>_Transform strings with common methods._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-011-string-methods-trim-touppercase.html`</p>
+
+<ul>
+<li>**012** — Substring & slice</li>
+</ul>
+<p>_Extract parts of strings._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-012-substring-slice.html`</p>
+
+<ul>
+<li>**013** — Search: includes/indexOf</li>
+</ul>
+<p>_Find text within text._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-013-search-includes-indexof.html`</p>
+
+<ul>
+<li>**014** — Replace & regex-lite</li>
+</ul>
+<p>_Replace text safely using replace()._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-014-replace-regex-lite.html`</p>
+
+<ul>
+<li>**015** — Number Parsing</li>
+</ul>
+<p>_Convert text input into numbers (parseInt/parseFloat)._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-015-number-parsing.html`</p>
+
+<ul>
+<li>**016** — NaN & Validation</li>
+</ul>
+<p>_Detect invalid numbers and handle gracefully._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-016-nan-validation.html`</p>
+
+<ul>
+<li>**017** — Rounding</li>
+</ul>
+<p>_Use Math.round/floor/ceil for friendly values._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-017-rounding.html`</p>
+
+<ul>
+<li>**018** — Random Numbers</li>
+</ul>
+<p>_Generate random values for games/UI._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-018-random-numbers.html`</p>
+
+<ul>
+<li>**019** — Formatting</li>
+</ul>
+<p>_Format numbers with toFixed and locale strings._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-019-formatting.html`</p>
+
+<ul>
+<li>**020** — Mini Challenge: Tip Calculator</li>
+</ul>
+<p>_Combine conversion + math into a useful tool._</p>
+<p>File: `chapter-02-strings-numbers-conversion/ex-020-mini-challenge-tip-calculator.html`</p>
+
+<ul>
+<li>**021** — if/else Basics</li>
+</ul>
+<p>_Branch execution based on conditions._</p>
+<p>File: `chapter-03-conditionals-logic/ex-021-if-else-basics.html`</p>
+
+<ul>
+<li>**022** — else-if Chains</li>
+</ul>
+<p>_Handle multiple cases cleanly._</p>
+<p>File: `chapter-03-conditionals-logic/ex-022-else-if-chains.html`</p>
+
+<ul>
+<li>**023** — Truthiness</li>
+</ul>
+<p>_Understand truthy/falsey values in JS._</p>
+<p>File: `chapter-03-conditionals-logic/ex-023-truthiness.html`</p>
+
+<ul>
+<li>**024** — Logical Operators</li>
+</ul>
+<p>_Combine conditions with && and ||._</p>
+<p>File: `chapter-03-conditionals-logic/ex-024-logical-operators.html`</p>
+
+<ul>
+<li>**025** — Ternary Operator</li>
+</ul>
+<p>_Write compact conditions with ?:._</p>
+<p>File: `chapter-03-conditionals-logic/ex-025-ternary-operator.html`</p>
+
+<ul>
+<li>**026** — Switch Statement</li>
+</ul>
+<p>_Select behavior by value using switch._</p>
+<p>File: `chapter-03-conditionals-logic/ex-026-switch-statement.html`</p>
+
+<ul>
+<li>**027** — Guard Clauses</li>
+</ul>
+<p>_Return early to simplify complex logic._</p>
+<p>File: `chapter-03-conditionals-logic/ex-027-guard-clauses.html`</p>
+
+<ul>
+<li>**028** — Input Validation Pattern</li>
+</ul>
+<p>_Validate inputs before acting._</p>
+<p>File: `chapter-03-conditionals-logic/ex-028-input-validation-pattern.html`</p>
+
+<ul>
+<li>**029** — Edge Cases</li>
+</ul>
+<p>_Design with unusual user input in mind._</p>
+<p>File: `chapter-03-conditionals-logic/ex-029-edge-cases.html`</p>
+
+<ul>
+<li>**030** — Mini Challenge: Grade Evaluator</li>
+</ul>
+<p>_Turn numeric inputs into letter grades._</p>
+<p>File: `chapter-03-conditionals-logic/ex-030-mini-challenge-grade-evaluator.html`</p>
+
+<ul>
+<li>**031** — Create & Index Arrays</li>
+</ul>
+<p>_Store ordered data and access by index._</p>
+<p>File: `chapter-04-arrays-iteration/ex-031-create-index-arrays.html`</p>
+
+<ul>
+<li>**032** — push/pop/shift/unshift</li>
+</ul>
+<p>_Add/remove items from arrays._</p>
+<p>File: `chapter-04-arrays-iteration/ex-032-push-pop-shift-unshift.html`</p>
+
+<ul>
+<li>**033** — for Loop Over Arrays</li>
+</ul>
+<p>_Iterate with indexes._</p>
+<p>File: `chapter-04-arrays-iteration/ex-033-for-loop-over-arrays.html`</p>
+
+<ul>
+<li>**034** — for...of Loop</li>
+</ul>
+<p>_Iterate items directly._</p>
+<p>File: `chapter-04-arrays-iteration/ex-034-for-of-loop.html`</p>
+
+<ul>
+<li>**035** — map()</li>
+</ul>
+<p>_Transform arrays into new arrays._</p>
+<p>File: `chapter-04-arrays-iteration/ex-035-map.html`</p>
+
+<ul>
+<li>**036** — filter()</li>
+</ul>
+<p>_Keep only items that match a rule._</p>
+<p>File: `chapter-04-arrays-iteration/ex-036-filter.html`</p>
+
+<ul>
+<li>**037** — reduce()</li>
+</ul>
+<p>_Summarize arrays into a single value._</p>
+<p>File: `chapter-04-arrays-iteration/ex-037-reduce.html`</p>
+
+<ul>
+<li>**038** — find()/some()/every()</li>
+</ul>
+<p>_Search and test arrays efficiently._</p>
+<p>File: `chapter-04-arrays-iteration/ex-038-find-some-every.html`</p>
+
+<ul>
+<li>**039** — Sorting</li>
+</ul>
+<p>_Sort numbers and strings with custom compare._</p>
+<p>File: `chapter-04-arrays-iteration/ex-039-sorting.html`</p>
+
+<ul>
+<li>**040** — Mini Challenge: Shopping List</li>
+</ul>
+<p>_Build an array-driven list manager._</p>
+<p>File: `chapter-04-arrays-iteration/ex-040-mini-challenge-shopping-list.html`</p>
+
+<ul>
+<li>**041** — Object Literals</li>
+</ul>
+<p>_Group related values into objects._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-041-object-literals.html`</p>
+
+<ul>
+<li>**042** — Read/Write Properties</li>
+</ul>
+<p>_Access and update object data._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-042-read-write-properties.html`</p>
+
+<ul>
+<li>**043** — Nested Objects</li>
+</ul>
+<p>_Model more complex data with nesting._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-043-nested-objects.html`</p>
+
+<ul>
+<li>**044** — Arrays of Objects</li>
+</ul>
+<p>_Work with lists of records._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-044-arrays-of-objects.html`</p>
+
+<ul>
+<li>**045** — Destructuring</li>
+</ul>
+<p>_Extract values cleanly from objects/arrays._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-045-destructuring.html`</p>
+
+<ul>
+<li>**046** — Optional Chaining</li>
+</ul>
+<p>_Safely access deep properties (?.)._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-046-optional-chaining.html`</p>
+
+<ul>
+<li>**047** — Default Values</li>
+</ul>
+<p>_Use nullish coalescing (??) for fallback._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-047-default-values.html`</p>
+
+<ul>
+<li>**048** — Copy vs Reference</li>
+</ul>
+<p>_Understand mutation and shallow copies._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-048-copy-vs-reference.html`</p>
+
+<ul>
+<li>**049** — JSON stringify/parse</li>
+</ul>
+<p>_Store and load structured data._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-049-json-stringify-parse.html`</p>
+
+<ul>
+<li>**050** — Mini Challenge: Profile Card Data</li>
+</ul>
+<p>_Model user data for later DOM rendering._</p>
+<p>File: `chapter-05-objects-data-modeling/ex-050-mini-challenge-profile-card-data.html`</p>
+
+<ul>
+<li>**051** — Function Declarations</li>
+</ul>
+<p>_Create reusable blocks of code._</p>
+<p>File: `chapter-06-functions-reusability/ex-051-function-declarations.html`</p>
+
+<ul>
+<li>**052** — Parameters & Arguments</li>
+</ul>
+<p>_Pass values into functions._</p>
+<p>File: `chapter-06-functions-reusability/ex-052-parameters-arguments.html`</p>
+
+<ul>
+<li>**053** — Return Values</li>
+</ul>
+<p>_Return computed results for reuse._</p>
+<p>File: `chapter-06-functions-reusability/ex-053-return-values.html`</p>
+
+<ul>
+<li>**054** — Function Expressions</li>
+</ul>
+<p>_Store functions in variables._</p>
+<p>File: `chapter-06-functions-reusability/ex-054-function-expressions.html`</p>
+
+<ul>
+<li>**055** — Arrow Functions</li>
+</ul>
+<p>_Use arrow syntax and understand differences._</p>
+<p>File: `chapter-06-functions-reusability/ex-055-arrow-functions.html`</p>
+
+<ul>
+<li>**056** — Default Parameters</li>
+</ul>
+<p>_Provide fallback parameter values._</p>
+<p>File: `chapter-06-functions-reusability/ex-056-default-parameters.html`</p>
+
+<ul>
+<li>**057** — Rest Parameters</li>
+</ul>
+<p>_Accept variable numbers of arguments._</p>
+<p>File: `chapter-06-functions-reusability/ex-057-rest-parameters.html`</p>
+
+<ul>
+<li>**058** — Pure vs Impure</li>
+</ul>
+<p>_Recognize side effects and write clean logic._</p>
+<p>File: `chapter-06-functions-reusability/ex-058-pure-vs-impure.html`</p>
+
+<ul>
+<li>**059** — Higher-Order Functions</li>
+</ul>
+<p>_Pass functions as arguments._</p>
+<p>File: `chapter-06-functions-reusability/ex-059-higher-order-functions.html`</p>
+
+<ul>
+<li>**060** — Mini Challenge: Utility Toolkit</li>
+</ul>
+<p>_Build a small set of reusable helpers._</p>
+<p>File: `chapter-06-functions-reusability/ex-060-mini-challenge-utility-toolkit.html`</p>
+
+<ul>
+<li>**061** — Block Scope</li>
+</ul>
+<p>_Use let/const scope predictably._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-061-block-scope.html`</p>
+
+<ul>
+<li>**062** — Hoisting Basics</li>
+</ul>
+<p>_Understand what hoists and what doesn’t._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-062-hoisting-basics.html`</p>
+
+<ul>
+<li>**063** — Closures Intro</li>
+</ul>
+<p>_Functions that remember their environment._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-063-closures-intro.html`</p>
+
+<ul>
+<li>**064** — Closure Counter</li>
+</ul>
+<p>_Build a counter with private state._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-064-closure-counter.html`</p>
+
+<ul>
+<li>**065** — IIFE Pattern</li>
+</ul>
+<p>_Encapsulate logic with immediately invoked functions._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-065-iife-pattern.html`</p>
+
+<ul>
+<li>**066** — Module Pattern</li>
+</ul>
+<p>_Expose a public API, keep internals private._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-066-module-pattern.html`</p>
+
+<ul>
+<li>**067** — Factory Functions</li>
+</ul>
+<p>_Create objects with shared behavior._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-067-factory-functions.html`</p>
+
+<ul>
+<li>**068** — this Basics</li>
+</ul>
+<p>_Understand this in common contexts._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-068-this-basics.html`</p>
+
+<ul>
+<li>**069** — bind/call/apply</li>
+</ul>
+<p>_Control function context explicitly._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-069-bind-call-apply.html`</p>
+
+<ul>
+<li>**070** — Mini Challenge: Private Settings</li>
+</ul>
+<p>_Store settings with closure-based privacy._</p>
+<p>File: `chapter-07-scope-closures-modules/ex-070-mini-challenge-private-settings.html`</p>
+
+<ul>
+<li>**071** — while Loops</li>
+</ul>
+<p>_Repeat until a condition changes._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-071-while-loops.html`</p>
+
+<ul>
+<li>**072** — do...while</li>
+</ul>
+<p>_Guarantee at least one run._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-072-do-while.html`</p>
+
+<ul>
+<li>**073** — Nested Loops</li>
+</ul>
+<p>_Work with grids and combinations._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-073-nested-loops.html`</p>
+
+<ul>
+<li>**074** — Break & Continue</li>
+</ul>
+<p>_Control loop flow._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-074-break-continue.html`</p>
+
+<ul>
+<li>**075** — Pattern: Accumulator</li>
+</ul>
+<p>_Build results gradually during a loop._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-075-pattern-accumulator.html`</p>
+
+<ul>
+<li>**076** — Pattern: Sentinel</li>
+</ul>
+<p>_Stop looping when a value is found._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-076-pattern-sentinel.html`</p>
+
+<ul>
+<li>**077** — Big-O Intuition</li>
+</ul>
+<p>_Spot slower code and improve it._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-077-big-o-intuition.html`</p>
+
+<ul>
+<li>**078** — Refactor for Readability</li>
+</ul>
+<p>_Rewrite loops to be clearer._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-078-refactor-for-readability.html`</p>
+
+<ul>
+<li>**079** — Mini Challenge: Frequency Counter</li>
+</ul>
+<p>_Count occurrences efficiently._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-079-mini-challenge-frequency-counter.html`</p>
+
+<ul>
+<li>**080** — Mini Challenge: Unique Values</li>
+</ul>
+<p>_Remove duplicates without libraries._</p>
+<p>File: `chapter-08-loops-patterns-efficiency/ex-080-mini-challenge-unique-values.html`</p>
+
+<ul>
+<li>**081** — Common Errors Tour</li>
+</ul>
+<p>_Recognize reference/type/syntax errors._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-081-common-errors-tour.html`</p>
+
+<ul>
+<li>**082** — try/catch</li>
+</ul>
+<p>_Handle runtime errors gracefully._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-082-try-catch.html`</p>
+
+<ul>
+<li>**083** — Throwing Errors</li>
+</ul>
+<p>_Create and throw helpful errors._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-083-throwing-errors.html`</p>
+
+<ul>
+<li>**084** — Debugging with logs</li>
+</ul>
+<p>_Use structured logs and labels._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-084-debugging-with-logs.html`</p>
+
+<ul>
+<li>**085** — Console Tools</li>
+</ul>
+<p>_Use console.table/dir/time for better debugging._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-085-console-tools.html`</p>
+
+<ul>
+<li>**086** — Assertions</li>
+</ul>
+<p>_Write simple checks to verify assumptions._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-086-assertions.html`</p>
+
+<ul>
+<li>**087** — Edge Case Checklist</li>
+</ul>
+<p>_Develop a testing mindset._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-087-edge-case-checklist.html`</p>
+
+<ul>
+<li>**088** — Input Sanitization</li>
+</ul>
+<p>_Clean user inputs safely._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-088-input-sanitization.html`</p>
+
+<ul>
+<li>**089** — Mini Challenge: Safe Calculator</li>
+</ul>
+<p>_Prevent crashes with validations._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-089-mini-challenge-safe-calculator.html`</p>
+
+<ul>
+<li>**090** — Mini Challenge: Self-Test</li>
+</ul>
+<p>_Add a tiny test runner for functions._</p>
+<p>File: `chapter-09-errors-debugging-testing-minds/ex-090-mini-challenge-self-test.html`</p>
+
+<ul>
+<li>**091** — Naming Conventions</li>
+</ul>
+<p>_Write self-explanatory code._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-091-naming-conventions.html`</p>
+
+<ul>
+<li>**092** — Single Responsibility</li>
+</ul>
+<p>_One function = one job._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-092-single-responsibility.html`</p>
+
+<ul>
+<li>**093** — DRY vs WET</li>
+</ul>
+<p>_Remove duplication safely._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-093-dry-vs-wet.html`</p>
+
+<ul>
+<li>**094** — Config Objects</li>
+</ul>
+<p>_Use config to avoid magic numbers._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-094-config-objects.html`</p>
+
+<ul>
+<li>**095** — State Objects</li>
+</ul>
+<p>_Store app state in a single place._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-095-state-objects.html`</p>
+
+<ul>
+<li>**096** — Event-Driven Thinking</li>
+</ul>
+<p>_Respond to user actions cleanly._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-096-event-driven-thinking.html`</p>
+
+<ul>
+<li>**097** — Separation: logic vs UI</li>
+</ul>
+<p>_Split DOM code from pure logic._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-097-separation-logic-vs-ui.html`</p>
+
+<ul>
+<li>**098** — Refactoring Exercise</li>
+</ul>
+<p>_Improve earlier code without changing behavior._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-098-refactoring-exercise.html`</p>
+
+<ul>
+<li>**099** — Mini Challenge: Settings Panel</li>
+</ul>
+<p>_Toggle features using config/state._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-099-mini-challenge-settings-panel.html`</p>
+
+<ul>
+<li>**100** — Mini Challenge: Simple Router</li>
+</ul>
+<p>_Swap views without frameworks._</p>
+<p>File: `chapter-10-clean-code-small-architectures/ex-100-mini-challenge-simple-router.html`</p>
+
+<ul>
+<li>**101** — Select Elements</li>
+</ul>
+<p>_Use querySelector/querySelectorAll effectively._</p>
+<p>File: `chapter-11-dom-basics/ex-101-select-elements.html`</p>
+
+<ul>
+<li>**102** — Read/Write Text</li>
+</ul>
+<p>_Use textContent and innerHTML safely._</p>
+<p>File: `chapter-11-dom-basics/ex-102-read-write-text.html`</p>
+
+<ul>
+<li>**103** — Attributes</li>
+</ul>
+<p>_Get/set attributes like src, href, data-*._</p>
+<p>File: `chapter-11-dom-basics/ex-103-attributes.html`</p>
+
+<ul>
+<li>**104** — Classes</li>
+</ul>
+<p>_Add/remove/toggle classes._</p>
+<p>File: `chapter-11-dom-basics/ex-104-classes.html`</p>
+
+<ul>
+<li>**105** — Create Elements</li>
+</ul>
+<p>_Build elements with createElement._</p>
+<p>File: `chapter-11-dom-basics/ex-105-create-elements.html`</p>
+
+<ul>
+<li>**106** — Append/Prepend</li>
+</ul>
+<p>_Insert nodes into the DOM._</p>
+<p>File: `chapter-11-dom-basics/ex-106-append-prepend.html`</p>
+
+<ul>
+<li>**107** — Remove/Replace</li>
+</ul>
+<p>_Remove or replace elements safely._</p>
+<p>File: `chapter-11-dom-basics/ex-107-remove-replace.html`</p>
+
+<ul>
+<li>**108** — DOM Traversal</li>
+</ul>
+<p>_parent/children/closest patterns._</p>
+<p>File: `chapter-11-dom-basics/ex-108-dom-traversal.html`</p>
+
+<ul>
+<li>**109** — Mini Challenge: Quote Generator UI</li>
+</ul>
+<p>_Update DOM from JS state._</p>
+<p>File: `chapter-11-dom-basics/ex-109-mini-challenge-quote-generator-ui.html`</p>
+
+<ul>
+<li>**110** — Mini Challenge: Card Renderer</li>
+</ul>
+<p>_Render data objects as DOM cards._</p>
+<p>File: `chapter-11-dom-basics/ex-110-mini-challenge-card-renderer.html`</p>
+
+<ul>
+<li>**111** — Click Events</li>
+</ul>
+<p>_React to button clicks._</p>
+<p>File: `chapter-12-dom-events/ex-111-click-events.html`</p>
+
+<ul>
+<li>**112** — Input Events</li>
+</ul>
+<p>_React to typing and changes._</p>
+<p>File: `chapter-12-dom-events/ex-112-input-events.html`</p>
+
+<ul>
+<li>**113** — Event Object</li>
+</ul>
+<p>_Use event.target and preventDefault._</p>
+<p>File: `chapter-12-dom-events/ex-113-event-object.html`</p>
+
+<ul>
+<li>**114** — Event Delegation</li>
+</ul>
+<p>_Handle many items with one listener._</p>
+<p>File: `chapter-12-dom-events/ex-114-event-delegation.html`</p>
+
+<ul>
+<li>**115** — Keyboard Events</li>
+</ul>
+<p>_Use keydown/keyup to build shortcuts._</p>
+<p>File: `chapter-12-dom-events/ex-115-keyboard-events.html`</p>
+
+<ul>
+<li>**116** — Form Submit</li>
+</ul>
+<p>_Process forms without reload._</p>
+<p>File: `chapter-12-dom-events/ex-116-form-submit.html`</p>
+
+<ul>
+<li>**117** — Focus/Blur</li>
+</ul>
+<p>_Improve UX with focus handling._</p>
+<p>File: `chapter-12-dom-events/ex-117-focus-blur.html`</p>
+
+<ul>
+<li>**118** — Pointer Events</li>
+</ul>
+<p>_Mouse vs touch basics._</p>
+<p>File: `chapter-12-dom-events/ex-118-pointer-events.html`</p>
+
+<ul>
+<li>**119** — Mini Challenge: Interactive List</li>
+</ul>
+<p>_Add/remove items via events._</p>
+<p>File: `chapter-12-dom-events/ex-119-mini-challenge-interactive-list.html`</p>
+
+<ul>
+<li>**120** — Mini Challenge: Shortcut Palette</li>
+</ul>
+<p>_Keyboard-driven UI actions._</p>
+<p>File: `chapter-12-dom-events/ex-120-mini-challenge-shortcut-palette.html`</p>
+
+<ul>
+<li>**121** — Render from Array</li>
+</ul>
+<p>_Map data to DOM nodes._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-121-render-from-array.html`</p>
+
+<ul>
+<li>**122** — Template Functions</li>
+</ul>
+<p>_Create HTML templates safely._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-122-template-functions.html`</p>
+
+<ul>
+<li>**123** — Diff-lite Update</li>
+</ul>
+<p>_Update only what changed._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-123-diff-lite-update.html`</p>
+
+<ul>
+<li>**124** — Empty States</li>
+</ul>
+<p>_Show helpful messages when no data._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-124-empty-states.html`</p>
+
+<ul>
+<li>**125** — Loading States</li>
+</ul>
+<p>_Show spinners/disabled UI while working._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-125-loading-states.html`</p>
+
+<ul>
+<li>**126** — Error States</li>
+</ul>
+<p>_Display friendly error messages._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-126-error-states.html`</p>
+
+<ul>
+<li>**127** — Pagination</li>
+</ul>
+<p>_Render partial lists and navigate pages._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-127-pagination.html`</p>
+
+<ul>
+<li>**128** — Search Filter</li>
+</ul>
+<p>_Filter displayed items as user types._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-128-search-filter.html`</p>
+
+<ul>
+<li>**129** — Mini Challenge: Product Grid</li>
+</ul>
+<p>_Render cards with filters and pagination._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-129-mini-challenge-product-grid.html`</p>
+
+<ul>
+<li>**130** — Mini Challenge: Notes UI</li>
+</ul>
+<p>_Render/edit notes with live updates._</p>
+<p>File: `chapter-13-dynamic-ui-rendering/ex-130-mini-challenge-notes-ui.html`</p>
+
+<ul>
+<li>**131** — Required Fields</li>
+</ul>
+<p>_Validate before submission._</p>
+<p>File: `chapter-14-forms-validation/ex-131-required-fields.html`</p>
+
+<ul>
+<li>**132** — Email Pattern</li>
+</ul>
+<p>_Validate formats with basic regex._</p>
+<p>File: `chapter-14-forms-validation/ex-132-email-pattern.html`</p>
+
+<ul>
+<li>**133** — Password Rules</li>
+</ul>
+<p>_Check length/complexity and show feedback._</p>
+<p>File: `chapter-14-forms-validation/ex-133-password-rules.html`</p>
+
+<ul>
+<li>**134** — Inline Errors</li>
+</ul>
+<p>_Display per-field error messages._</p>
+<p>File: `chapter-14-forms-validation/ex-134-inline-errors.html`</p>
+
+<ul>
+<li>**135** — Debounced Validation</li>
+</ul>
+<p>_Validate after user pauses typing._</p>
+<p>File: `chapter-14-forms-validation/ex-135-debounced-validation.html`</p>
+
+<ul>
+<li>**136** — Form Serialization</li>
+</ul>
+<p>_Collect form values into an object._</p>
+<p>File: `chapter-14-forms-validation/ex-136-form-serialization.html`</p>
+
+<ul>
+<li>**137** — Checkbox/Radio</li>
+</ul>
+<p>_Handle options cleanly._</p>
+<p>File: `chapter-14-forms-validation/ex-137-checkbox-radio.html`</p>
+
+<ul>
+<li>**138** — Select Inputs</li>
+</ul>
+<p>_Use dropdowns and map values._</p>
+<p>File: `chapter-14-forms-validation/ex-138-select-inputs.html`</p>
+
+<ul>
+<li>**139** — Mini Challenge: Signup Form</li>
+</ul>
+<p>_Build a complete validated form._</p>
+<p>File: `chapter-14-forms-validation/ex-139-mini-challenge-signup-form.html`</p>
+
+<ul>
+<li>**140** — Mini Challenge: Survey Builder</li>
+</ul>
+<p>_Collect and summarize responses._</p>
+<p>File: `chapter-14-forms-validation/ex-140-mini-challenge-survey-builder.html`</p>
+
+<ul>
+<li>**141** — State Store</li>
+</ul>
+<p>_Centralize state and re-render on change._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-141-state-store.html`</p>
+
+<ul>
+<li>**142** — Toggle Component</li>
+</ul>
+<p>_Reusable toggle control._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-142-toggle-component.html`</p>
+
+<ul>
+<li>**143** — Tabs Component</li>
+</ul>
+<p>_Switch views with tab navigation._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-143-tabs-component.html`</p>
+
+<ul>
+<li>**144** — Modal Component</li>
+</ul>
+<p>_Show/hide modal with focus management._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-144-modal-component.html`</p>
+
+<ul>
+<li>**145** — Toast Notifications</li>
+</ul>
+<p>_Temporary messages driven by state._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-145-toast-notifications.html`</p>
+
+<ul>
+<li>**146** — Accordion</li>
+</ul>
+<p>_Expandable sections with delegation._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-146-accordion.html`</p>
+
+<ul>
+<li>**147** — Theme Switcher</li>
+</ul>
+<p>_Persist theme across reloads._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-147-theme-switcher.html`</p>
+
+<ul>
+<li>**148** — Accessibility Basics</li>
+</ul>
+<p>_ARIA roles and keyboard support._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-148-accessibility-basics.html`</p>
+
+<ul>
+<li>**149** — Mini Challenge: Dashboard Widgets</li>
+</ul>
+<p>_Multiple components sharing state._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-149-mini-challenge-dashboard-widgets.html`</p>
+
+<ul>
+<li>**150** — Mini Challenge: Component Library Starter</li>
+</ul>
+<p>_Build a small vanilla component toolkit._</p>
+<p>File: `chapter-15-ui-state-components-vanilla/ex-150-mini-challenge-component-library-starter.html`</p>
+
+<ul>
+<li>**151** — CSS Variables</li>
+</ul>
+<p>_Control themes via CSS custom properties._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-151-css-variables.html`</p>
+
+<ul>
+<li>**152** — Class-based Animations</li>
+</ul>
+<p>_Trigger CSS animations via class changes._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-152-class-based-animations.html`</p>
+
+<ul>
+<li>**153** — requestAnimationFrame</li>
+</ul>
+<p>_Smooth JS-driven animation._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-153-requestanimationframe.html`</p>
+
+<ul>
+<li>**154** — Progress Bar</li>
+</ul>
+<p>_Animate progress updates._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-154-progress-bar.html`</p>
+
+<ul>
+<li>**155** — Scroll Spy</li>
+</ul>
+<p>_Update UI based on scroll position._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-155-scroll-spy.html`</p>
+
+<ul>
+<li>**156** — IntersectionObserver</li>
+</ul>
+<p>_Lazy-load and reveal elements._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-156-intersectionobserver.html`</p>
+
+<ul>
+<li>**157** — Drag Basics</li>
+</ul>
+<p>_Simple draggable element._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-157-drag-basics.html`</p>
+
+<ul>
+<li>**158** — Drop Zones</li>
+</ul>
+<p>_Basic drag/drop interactions._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-158-drop-zones.html`</p>
+
+<ul>
+<li>**159** — Mini Challenge: Animated Menu</li>
+</ul>
+<p>_Interactive menu with transitions._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-159-mini-challenge-animated-menu.html`</p>
+
+<ul>
+<li>**160** — Mini Challenge: Kanban Drag/Drop Lite</li>
+</ul>
+<p>_Drag cards between columns._</p>
+<p>File: `chapter-16-styling-animation-with-js/ex-160-mini-challenge-kanban-drag-drop-lite.html`</p>
+
+<ul>
+<li>**161** — setTimeout</li>
+</ul>
+<p>_Run code after a delay._</p>
+<p>File: `chapter-17-timers-async-basics/ex-161-settimeout.html`</p>
+
+<ul>
+<li>**162** — setInterval</li>
+</ul>
+<p>_Run code repeatedly._</p>
+<p>File: `chapter-17-timers-async-basics/ex-162-setinterval.html`</p>
+
+<ul>
+<li>**163** — Countdown Timer</li>
+</ul>
+<p>_Create a timer UI._</p>
+<p>File: `chapter-17-timers-async-basics/ex-163-countdown-timer.html`</p>
+
+<ul>
+<li>**164** — Stopwatch</li>
+</ul>
+<p>_Start/stop/reset and track time._</p>
+<p>File: `chapter-17-timers-async-basics/ex-164-stopwatch.html`</p>
+
+<ul>
+<li>**165** — Debounce</li>
+</ul>
+<p>_Limit how often a function runs._</p>
+<p>File: `chapter-17-timers-async-basics/ex-165-debounce.html`</p>
+
+<ul>
+<li>**166** — Throttle</li>
+</ul>
+<p>_Run at most once per time window._</p>
+<p>File: `chapter-17-timers-async-basics/ex-166-throttle.html`</p>
+
+<ul>
+<li>**167** — Async Mindset</li>
+</ul>
+<p>_Understand tasks that finish later._</p>
+<p>File: `chapter-17-timers-async-basics/ex-167-async-mindset.html`</p>
+
+<ul>
+<li>**168** — Promises Intro</li>
+</ul>
+<p>_Create and resolve a promise._</p>
+<p>File: `chapter-17-timers-async-basics/ex-168-promises-intro.html`</p>
+
+<ul>
+<li>**169** — Mini Challenge: Pomodoro Timer</li>
+</ul>
+<p>_Productivity timer with alerts._</p>
+<p>File: `chapter-17-timers-async-basics/ex-169-mini-challenge-pomodoro-timer.html`</p>
+
+<ul>
+<li>**170** — Mini Challenge: Auto-Save Draft</li>
+</ul>
+<p>_Save inputs periodically._</p>
+<p>File: `chapter-17-timers-async-basics/ex-170-mini-challenge-auto-save-draft.html`</p>
+
+<ul>
+<li>**171** — Promise Chains</li>
+</ul>
+<p>_Sequence async steps with then()._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-171-promise-chains.html`</p>
+
+<ul>
+<li>**172** — Promise Error Handling</li>
+</ul>
+<p>_Catch errors consistently._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-172-promise-error-handling.html`</p>
+
+<ul>
+<li>**173** — Promise.all</li>
+</ul>
+<p>_Run tasks in parallel and combine results._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-173-promise-all.html`</p>
+
+<ul>
+<li>**174** — Promise.race</li>
+</ul>
+<p>_Take the fastest result._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-174-promise-race.html`</p>
+
+<ul>
+<li>**175** — Timeout Wrapper</li>
+</ul>
+<p>_Add timeouts to promises._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-175-timeout-wrapper.html`</p>
+
+<ul>
+<li>**176** — Retry Pattern</li>
+</ul>
+<p>_Retry failing async tasks safely._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-176-retry-pattern.html`</p>
+
+<ul>
+<li>**177** — Async Queue</li>
+</ul>
+<p>_Limit concurrency with a queue._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-177-async-queue.html`</p>
+
+<ul>
+<li>**178** — Async Event Flow</li>
+</ul>
+<p>_Combine events with promises._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-178-async-event-flow.html`</p>
+
+<ul>
+<li>**179** — Mini Challenge: Image Preloader</li>
+</ul>
+<p>_Preload images and show progress._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-179-mini-challenge-image-preloader.html`</p>
+
+<ul>
+<li>**180** — Mini Challenge: Parallel Fetch Summary</li>
+</ul>
+<p>_Fetch multiple endpoints and summarize._</p>
+<p>File: `chapter-18-promises-async-patterns/ex-180-mini-challenge-parallel-fetch-summary.html`</p>
+
+<ul>
+<li>**181** — Fetch JSON</li>
+</ul>
+<p>_Request JSON and render results._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-181-fetch-json.html`</p>
+
+<ul>
+<li>**182** — Headers & Status</li>
+</ul>
+<p>_Handle status codes and errors._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-182-headers-status.html`</p>
+
+<ul>
+<li>**183** — Query Params</li>
+</ul>
+<p>_Build URLs with search params._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-183-query-params.html`</p>
+
+<ul>
+<li>**184** — POST JSON</li>
+</ul>
+<p>_Send JSON data to an endpoint (mock)._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-184-post-json.html`</p>
+
+<ul>
+<li>**185** — AbortController</li>
+</ul>
+<p>_Cancel fetch requests._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-185-abortcontroller.html`</p>
+
+<ul>
+<li>**186** — Caching Basics</li>
+</ul>
+<p>_Cache results in memory/localStorage._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-186-caching-basics.html`</p>
+
+<ul>
+<li>**187** — Rate Limiting</li>
+</ul>
+<p>_Avoid spamming APIs with debounce/throttle._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-187-rate-limiting.html`</p>
+
+<ul>
+<li>**188** — Skeleton UI</li>
+</ul>
+<p>_Show skeletons while loading._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-188-skeleton-ui.html`</p>
+
+<ul>
+<li>**189** — Mini Challenge: Data Table Viewer</li>
+</ul>
+<p>_Sort/filter a fetched dataset._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-189-mini-challenge-data-table-viewer.html`</p>
+
+<ul>
+<li>**190** — Mini Challenge: Weather UI Mock</li>
+</ul>
+<p>_Render API-like data (no keys needed)._</p>
+<p>File: `chapter-19-fetch-api-working-with-data/ex-190-mini-challenge-weather-ui-mock.html`</p>
+
+<ul>
+<li>**191** — Async/Await Basics</li>
+</ul>
+<p>_Rewrite promise chains with await._</p>
+<p>File: `chapter-20-async-await-mastery/ex-191-async-await-basics.html`</p>
+
+<ul>
+<li>**192** — try/catch with await</li>
+</ul>
+<p>_Handle async errors cleanly._</p>
+<p>File: `chapter-20-async-await-mastery/ex-192-try-catch-with-await.html`</p>
+
+<ul>
+<li>**193** — Sequential vs Parallel</li>
+</ul>
+<p>_Choose await strategy wisely._</p>
+<p>File: `chapter-20-async-await-mastery/ex-193-sequential-vs-parallel.html`</p>
+
+<ul>
+<li>**194** — Async Iteration</li>
+</ul>
+<p>_Process items with for...of + await._</p>
+<p>File: `chapter-20-async-await-mastery/ex-194-async-iteration.html`</p>
+
+<ul>
+<li>**195** — Async Reducer</li>
+</ul>
+<p>_Accumulate results across awaits._</p>
+<p>File: `chapter-20-async-await-mastery/ex-195-async-reducer.html`</p>
+
+<ul>
+<li>**196** — Async Form Submit</li>
+</ul>
+<p>_Submit forms asynchronously._</p>
+<p>File: `chapter-20-async-await-mastery/ex-196-async-form-submit.html`</p>
+
+<ul>
+<li>**197** — Optimistic UI</li>
+</ul>
+<p>_Update UI immediately then confirm._</p>
+<p>File: `chapter-20-async-await-mastery/ex-197-optimistic-ui.html`</p>
+
+<ul>
+<li>**198** — Rollback on Failure</li>
+</ul>
+<p>_Revert UI on errors._</p>
+<p>File: `chapter-20-async-await-mastery/ex-198-rollback-on-failure.html`</p>
+
+<ul>
+<li>**199** — Mini Challenge: Async Search</li>
+</ul>
+<p>_Search with debounce + cancel._</p>
+<p>File: `chapter-20-async-await-mastery/ex-199-mini-challenge-async-search.html`</p>
+
+<ul>
+<li>**200** — Mini Challenge: Mini API Client</li>
+</ul>
+<p>_Build a reusable fetch wrapper._</p>
+<p>File: `chapter-20-async-await-mastery/ex-200-mini-challenge-mini-api-client.html`</p>
+
+<ul>
+<li>**201** — Save Simple Values</li>
+</ul>
+<p>_Store strings/numbers safely._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-201-save-simple-values.html`</p>
+
+<ul>
+<li>**202** — Save Objects</li>
+</ul>
+<p>_Serialize objects with JSON._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-202-save-objects.html`</p>
+
+<ul>
+<li>**203** — App Settings</li>
+</ul>
+<p>_Persist settings like theme and layout._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-203-app-settings.html`</p>
+
+<ul>
+<li>**204** — Saved Lists</li>
+</ul>
+<p>_Persist a to-do list._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-204-saved-lists.html`</p>
+
+<ul>
+<li>**205** — Migrations</li>
+</ul>
+<p>_Handle changing storage schema._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-205-migrations.html`</p>
+
+<ul>
+<li>**206** — Session vs Local</li>
+</ul>
+<p>_Understand storage lifetimes._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-206-session-vs-local.html`</p>
+
+<ul>
+<li>**207** — Storage Events</li>
+</ul>
+<p>_React to changes across tabs._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-207-storage-events.html`</p>
+
+<ul>
+<li>**208** — Export/Import JSON</li>
+</ul>
+<p>_Backup and restore app data._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-208-export-import-json.html`</p>
+
+<ul>
+<li>**209** — Mini Challenge: Notes App Persistence</li>
+</ul>
+<p>_Notes that survive reloads._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-209-mini-challenge-notes-app-persistence.html`</p>
+
+<ul>
+<li>**210** — Mini Challenge: Habit Tracker</li>
+</ul>
+<p>_Track daily habits with persistence._</p>
+<p>File: `chapter-21-local-storage-persistence/ex-210-mini-challenge-habit-tracker.html`</p>
+
+<ul>
+<li>**211** — Pub/Sub Events</li>
+</ul>
+<p>_Create a tiny event bus._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-211-pub-sub-events.html`</p>
+
+<ul>
+<li>**212** — Finite State Machine</li>
+</ul>
+<p>_Model UI flows with states._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-212-finite-state-machine.html`</p>
+
+<ul>
+<li>**213** — Command Pattern</li>
+</ul>
+<p>_Undo/redo foundation._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-213-command-pattern.html`</p>
+
+<ul>
+<li>**214** — Observer Pattern</li>
+</ul>
+<p>_React to state changes cleanly._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-214-observer-pattern.html`</p>
+
+<ul>
+<li>**215** — Factory + Config</li>
+</ul>
+<p>_Generate components from config._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-215-factory-config.html`</p>
+
+<ul>
+<li>**216** — Validation Library</li>
+</ul>
+<p>_Build reusable validators._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-216-validation-library.html`</p>
+
+<ul>
+<li>**217** — Formatting Helpers</li>
+</ul>
+<p>_Dates, currency, strings helpers._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-217-formatting-helpers.html`</p>
+
+<ul>
+<li>**218** — API Wrapper</li>
+</ul>
+<p>_Create a small API layer._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-218-api-wrapper.html`</p>
+
+<ul>
+<li>**219** — Mini Challenge: Undoable Counter</li>
+</ul>
+<p>_Counter with undo/redo commands._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-219-mini-challenge-undoable-counter.html`</p>
+
+<ul>
+<li>**220** — Mini Challenge: Form Wizard</li>
+</ul>
+<p>_Multi-step form with FSM._</p>
+<p>File: `chapter-22-reusable-patterns-mini-archite/ex-220-mini-challenge-form-wizard.html`</p>
+
+<ul>
+<li>**221** — To-Do App v1</li>
+</ul>
+<p>_Build core to-do app features._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-221-to-do-app-v1.html`</p>
+
+<ul>
+<li>**222** — To-Do App v2</li>
+</ul>
+<p>_Add filters, persistence, and stats._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-222-to-do-app-v2.html`</p>
+
+<ul>
+<li>**223** — Quiz App v1</li>
+</ul>
+<p>_Multiple choice quiz engine._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-223-quiz-app-v1.html`</p>
+
+<ul>
+<li>**224** — Quiz App v2</li>
+</ul>
+<p>_Timers, scoring, and question bank._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-224-quiz-app-v2.html`</p>
+
+<ul>
+<li>**225** — Recipe Finder Mock</li>
+</ul>
+<p>_Search/filter UI with templates._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-225-recipe-finder-mock.html`</p>
+
+<ul>
+<li>**226** — Kanban Lite v1</li>
+</ul>
+<p>_Columns and cards with drag support._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-226-kanban-lite-v1.html`</p>
+
+<ul>
+<li>**227** — Kanban Lite v2</li>
+</ul>
+<p>_Persistence and card editing._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-227-kanban-lite-v2.html`</p>
+
+<ul>
+<li>**228** — Chat UI Mock</li>
+</ul>
+<p>_Render messages and send flow (no backend)._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-228-chat-ui-mock.html`</p>
+
+<ul>
+<li>**229** — Mini Challenge: Habit Dashboard</li>
+</ul>
+<p>_Charts-lite with DOM + data._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-229-mini-challenge-habit-dashboard.html`</p>
+
+<ul>
+<li>**230** — Mini Challenge: Portfolio Landing</li>
+</ul>
+<p>_A landing page that links your best demos._</p>
+<p>File: `chapter-23-mini-apps-built-from-earlier-w/ex-230-mini-challenge-portfolio-landing.html`</p>
+
+<ul>
+<li>**231** — Performance Basics</li>
+</ul>
+<p>_Minimize reflows and heavy DOM work._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-231-performance-basics.html`</p>
+
+<ul>
+<li>**232** — Memoization</li>
+</ul>
+<p>_Cache expensive computations._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-232-memoization.html`</p>
+
+<ul>
+<li>**233** — Virtualization Lite</li>
+</ul>
+<p>_Render long lists efficiently._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-233-virtualization-lite.html`</p>
+
+<ul>
+<li>**234** — Accessibility: Keyboard</li>
+</ul>
+<p>_Ensure full keyboard navigation._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-234-accessibility-keyboard.html`</p>
+
+<ul>
+<li>**235** — Accessibility: ARIA</li>
+</ul>
+<p>_Use ARIA labels/roles appropriately._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-235-accessibility-aria.html`</p>
+
+<ul>
+<li>**236** — Responsive UI</li>
+</ul>
+<p>_Adapt layout based on viewport width._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-236-responsive-ui.html`</p>
+
+<ul>
+<li>**237** — Error Reporting</li>
+</ul>
+<p>_Centralize error logging._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-237-error-reporting.html`</p>
+
+<ul>
+<li>**238** — Feature Flags</li>
+</ul>
+<p>_Enable/disable features safely._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-238-feature-flags.html`</p>
+
+<ul>
+<li>**239** — Mini Challenge: Audit & Refactor</li>
+</ul>
+<p>_Refactor a prior app for speed and clarity._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-239-mini-challenge-audit-refactor.html`</p>
+
+<ul>
+<li>**240** — Mini Challenge: Deploy Checklist</li>
+</ul>
+<p>_Prepare projects for GitHub Pages._</p>
+<p>File: `chapter-24-polish-performance-accessibili/ex-240-mini-challenge-deploy-checklist.html`</p>
+
+<ul>
+<li>**241** — Prompting for Explanations</li>
+</ul>
+<p>_Ask AI for concept-level explanations._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-241-prompting-for-explanations.html`</p>
+
+<ul>
+<li>**242** — Prompting for Refactors</li>
+</ul>
+<p>_Refactor for readability without behavior change._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-242-prompting-for-refactors.html`</p>
+
+<ul>
+<li>**243** — Prompting for Tests</li>
+</ul>
+<p>_Generate test cases and edge cases._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-243-prompting-for-tests.html`</p>
+
+<ul>
+<li>**244** — Prompting for Debugging</li>
+</ul>
+<p>_Provide minimal reproductions and logs._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-244-prompting-for-debugging.html`</p>
+
+<ul>
+<li>**245** — Prompting for Alternatives</li>
+</ul>
+<p>_Compare solutions and trade-offs._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-245-prompting-for-alternatives.html`</p>
+
+<ul>
+<li>**246** — AI + Code Reviews</li>
+</ul>
+<p>_Simulate a senior dev review and apply feedback._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-246-ai-code-reviews.html`</p>
+
+<ul>
+<li>**247** — AI for Documentation</li>
+</ul>
+<p>_Generate docs and improve clarity._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-247-ai-for-documentation.html`</p>
+
+<ul>
+<li>**248** — AI for Learning Plans</li>
+</ul>
+<p>_Create a study plan for your weak areas._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-248-ai-for-learning-plans.html`</p>
+
+<ul>
+<li>**249** — Mini Challenge: Improve a Project</li>
+</ul>
+<p>_Use AI to propose and implement upgrades._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-249-mini-challenge-improve-a-project.html`</p>
+
+<ul>
+<li>**250** — Mini Challenge: Portfolio Narrative</li>
+</ul>
+<p>_Use AI to write project README/story._</p>
+<p>File: `chapter-25-ai-assisted-javascript-mastery/ex-250-mini-challenge-portfolio-narrative.html`</p>
+</div>
+</body>
+</html>
