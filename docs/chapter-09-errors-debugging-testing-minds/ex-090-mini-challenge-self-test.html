@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Exercise 090: Mini Challenge: Self-Test</title>
+<style>
+  :root { --bg:#0b1020; --panel:#121a33; --text:#e8ecff; --muted:#a7b0d6; --accent:#7aa2ff; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); }
+  header { padding:18px 18px 10px; border-bottom:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(122,162,255,.14), transparent); }
+  .wrap { max-width:980px; margin:0 auto; padding:18px; }
+  h1 { font-size:22px; margin:0 0 6px; }
+  .meta { color:var(--muted); font-size:13px; }
+  .grid { display:grid; grid-template-columns: 1.15fr .85fr; gap:14px; }
+  @media (max-width: 860px) { .grid { grid-template-columns:1fr; } }
+  .card { background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:14px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+  .label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+  .code { background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px; overflow:auto; white-space:pre; }
+  button { background:var(--accent); color:#0b1020; border:0; border-radius:12px; padding:10px 12px; font-weight:650; cursor:pointer; }
+  button.secondary { background:transparent; color:var(--text); border:1px solid rgba(255,255,255,.18); }
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px; }
+  .small { font-size:13px; color:var(--muted); display:flex; gap:8px; align-items:center; }
+  input { background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.12); color:var(--text); border-radius:12px; padding:10px 12px; min-width:180px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .pill { display:inline-block; padding:8px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.18); }
+  .viz { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px; margin-top:10px; }
+  .kpi { background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:10px; }
+  .kpi .k { display:block; color:var(--muted); font-size:12px; }
+  .kpi .v { display:block; font-size:16px; font-weight:700; margin-top:4px; }
+  ul.list { margin:10px 0 0; padding:0 0 0 18px; color:var(--muted); }
+  .bars { margin-top:10px; display:flex; flex-direction:column; gap:8px; }
+  .bar { background:rgba(122,162,255,.22); border:1px solid rgba(255,255,255,.10); border-radius:999px; padding:8px 10px; overflow:hidden; }
+  .badgeRow { margin-top:10px; }
+  .badge { display:inline-block; padding:8px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.18); color:var(--text); }
+  .badge[data-kind="ok"] { border-color: rgba(74,222,128,.55); }
+  .badge[data-kind="warn"] { border-color: rgba(250,204,21,.55); }
+  .badge[data-kind="bad"] { border-color: rgba(251,113,133,.65); }
+  .table { width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+  .table th,.table td { border:1px solid rgba(255,255,255,.10); padding:8px 10px; font-size:13px; color:var(--muted); }
+  .cardMini { display:flex; gap:12px; align-items:center; padding:12px; border-radius:14px; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.25); margin-top:10px; }
+  .avatar { width:44px; height:44px; border-radius:14px; background:rgba(122,162,255,.25); border:1px solid rgba(255,255,255,.10); }
+  .title { font-weight:800; }
+  .meta2 { color:var(--muted); font-size:13px; }
+  .box { display:flex; align-items:center; justify-content:center; height:56px; border-radius:12px; margin-top:10px;
+          background:rgba(255,255,255,.06); border:1px dashed rgba(255,255,255,.18); }
+  .box.active { border-style:solid; background:rgba(74,222,128,.10); }
+  .progress { width:100%; height:14px; border-radius:999px; border:1px solid rgba(255,255,255,.12); margin-top:10px; overflow:hidden; background:rgba(0,0,0,.25); }
+  .fill { height:100%; width:0%; background:rgba(122,162,255,.55); }
+  #output { font-weight:700; }
+  #log { max-height:260px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Exercise 090: Mini Challenge: Self-Test</h1>
+    <div class="meta">Chapter 9: Errors, Debugging & Testing Mindset • Visible progression: console → UI → mini apps</div>
+    <div class="row" style="margin-top:10px;"><a class="pill" href="../chapter-09-errors-debugging-testing-minds/ex-089-mini-challenge-safe-calculator.html">← Prev</a> <a class="pill" href="../index.html">Index</a> <a class="pill" href="../chapter-10-clean-code-small-architectures/ex-091-naming-conventions.html">Next →</a></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+    <section class="card">
+      <div class="label">Learning objective</div>
+      <p style="margin-top:6px; color:var(--muted);">Add a tiny test runner for functions.</p>
+
+      <div class="label" style="margin-top:14px;">Key snippet (what the book focuses on)</div>
+      <pre class="code"><code>try { risky(); } catch (err) { show(err.message); }</code></pre>
+
+      <div class="row" style="margin-top:12px;">
+        <button id="run">Run</button>
+        <button class="secondary" id="clear">Clear log</button>
+        <span class="meta">Tip: Open DevTools → Console.</span>
+      </div>
+
+      <div class="badgeRow"><span class="badge" id="badge" data-kind="info">Ready</span></div>
+
+      <div style="margin-top:12px;" class="card">
+        <div class="label">Output</div>
+        <div id="output" style="margin-top:6px;">(run the exercise)</div>
+      </div>
+
+      <div class="row">
+  <input id="a" inputmode="numeric" placeholder="a (number)" />
+  <input id="b" inputmode="numeric" placeholder="b (number)" />
+  <button id="runSafe">Safe divide</button>
+</div>
+<div class="badgeRow">
+  <span class="badge" id="badge" data-kind="info">Ready</span>
+</div>
+
+      <div style="margin-top:12px;">
+        <div class="label">Try-it-yourself</div>
+        <ul>
+          <li>Change one value or rule, re-run, and explain what changed.</li>
+          <li>Add one log that proves your code is doing what you think it is.</li>
+          <li>Make a tiny improvement to readability (rename, extract, simplify).</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="card">
+      <div class="label">AI-assisted learning prompts</div>
+      <ol style="margin-top:6px; color:var(--muted);">
+        <li>Explain the key idea in "Mini Challenge: Self-Test" in 5 bullets with one real-world analogy.</li><li>What is one common beginner mistake with this concept, and how do I avoid it?</li><li>Give me 2 ways to extend this into a portfolio-worthy feature.</li>
+      </ol>
+
+      <div class="label" style="margin-top:14px;">What to notice</div>
+      <ul style="margin-top:6px; color:var(--muted);">
+        <li>What is “data”, what is “logic”, what is “UI”?</li>
+        <li>What would happen with unexpected inputs?</li>
+        <li>What part could be reused in a different project?</li>
+      </ul>
+
+      <div class="label" style="margin-top:14px;">Console log</div>
+      <pre class="code" id="log"></pre>
+    </aside>
+  </div>
+</div>
+
+<script>
+const $ = (sel, root=document) => root.querySelector(sel);
+const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+const out = (msg) => { $("#output").textContent = String(msg); };
+const setBadge = (text, kind="info") => {
+  const b = $("#badge");
+  b.textContent = text;
+  b.dataset.kind = kind;
+};
+const log = (...args) => {
+  console.log(...args);
+  $("#log").textContent += args.map(a => typeof a === "object" ? JSON.stringify(a, null, 2) : String(a)).join(" ") + "\n";
+};
+const clearLog = () => { $("#log").textContent = ""; };
+
+const renderList = (items) => {
+  const ul = $("#vizList");
+  if (!ul) return;
+  ul.innerHTML = "";
+  for (const item of items) {
+    const li = document.createElement("li");
+    li.textContent = String(item);
+    ul.appendChild(li);
+  }
+};
+
+const renderTable = (rows) => {
+  const table = $("#vizTable");
+  if (!table) return;
+  table.innerHTML = "";
+  if (!rows || !rows.length) return;
+  const cols = Object.keys(rows[0]);
+  const thead = document.createElement("thead");
+  const trh = document.createElement("tr");
+  cols.forEach(c => { const th=document.createElement("th"); th.textContent=c; trh.appendChild(th); });
+  thead.appendChild(trh);
+  const tbody = document.createElement("tbody");
+  rows.forEach(r => {
+    const tr = document.createElement("tr");
+    cols.forEach(c => { const td=document.createElement("td"); td.textContent=String(r[c]); tr.appendChild(td); });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(thead);
+  table.appendChild(tbody);
+};
+
+const renderBars = (nums) => {
+  const wrap = $("#vizBars");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  const max = Math.max(1, ...nums);
+  nums.forEach(n => {
+    const bar = document.createElement("div");
+    bar.className = "bar";
+    bar.style.width = (Math.round((n / max) * 100)) + "%";
+    bar.textContent = String(n);
+    wrap.appendChild(bar);
+  });
+};
+
+const qs = (obj) => new URLSearchParams(obj).toString();
+
+$("#clear").addEventListener("click", () => {
+  clearLog();
+  out("(cleared)");
+  setBadge("Cleared", "warn");
+});
+
+$("#run").addEventListener("click", () => {
+  (function main() {
+    clearLog();
+    function safeDivide(a,b){
+      if (!Number.isFinite(a) || !Number.isFinite(b)) throw new TypeError("Numbers only");
+      if (b === 0) throw new Error("Cannot divide by zero");
+      return a / b;
+    }
+    const show = (kind, msg) => { setBadge(msg, kind); out(msg); };
+    $("#runSafe").onclick = () => {
+      clearLog();
+      try{
+        const a = Number($("#a").value);
+        const b = Number($("#b").value);
+        const result = safeDivide(a,b);
+        show("ok", "Result: " + result);
+        log({ a, b, result });
+      } catch(err){
+        show("bad", "Handled error: " + err.message);
+        log("ERROR:", err);
+      }
+    };
+    $("#a").value = "10";
+    $("#b").value = "0";
+    $("#runSafe").click();
+  })();
+});
+
+// Auto-run
+$("#run").click();
+</script>
+</body>
+</html>
